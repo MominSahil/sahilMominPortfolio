@@ -7,28 +7,262 @@
     <link rel="icon" type="image/png" href="./assets/icons8-portfolio-48.png">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.1/css/all.css" integrity="sha384-vp86vTRFVJgpjF9jiIGPEEqYqlDwgyBgEF109VFjmqGmIY/Y4HV4d3Gp2irVfcrp" crossorigin="anonymous">
 <body>
-    <header>
-        <nav>
-            <ul>
-                <li>Home</li>
-                <li>About Me</li>
-                <li>Resume</li>
-                <li>Portfolio</li>
-                <li>Community Involvement</li>
-                <li>Contact</li>
+    <header class="menu">
+        <nav class="menu__bar">
+            <ul class="menu__bar--list">
+                <li class="menu__bar--listOption">Home</li>
+                <li class="menu__bar--listOption">About Me</li>
+                <li class="menu__bar--listOption">Resume</li>
+                <li class="menu__bar--listOption">Portfolio</li>
+                <li class="menu__bar--listOption">Community Involvement</li>
+                <li class="menu__bar--listOption">Contact</li>
             </ul>
         </nav>
-        <div>
-            <img src="./assets/icons8-portfolio-48.png" alt="">
-            <h2>Sahil Momin</h2>
-            <h3>Front-End Developer</h3>
-            <ul>
-                <li><a href="https://www.linkedin.com/in/sahilmomin/"><i class="fab fa-linkedin-in"></i>LinkedIn</a></li>
-                <li><a href="https://github.com/MominSahil"><i class="fab fa-github"></i>GitHub</a></li>
-                <li><a href="https://twitter.com/sahilmomin"><i class="fab fa-twitter"></i>Twitter</a></li>
+        <div class="menu__myInfo">
+            <img src="./assets/icons8-portfolio-48.png" alt="" class="menu__myInfo-myPic">
+            <h2 class="menu__myInfo--myName">Sahil Momin</h2>
+            <h3 class="menu__myInfo--myWork">FrontEnd Developer</h3>
+            <ul class="menu__myInfo--social">
+                <li class="menu__myInfo--socialIcons"><a href="https://www.linkedin.com/in/sahilmomin/"><i class="fab fa-linkedin-in"></i>LinkedIn</a></li>
+                <li class="menu__myInfo--socialIcons"><a href="https://github.com/MominSahil"><i class="fab fa-github"></i>GitHub</a></li>
+                <li class="menu__myInfo--socialIcons"><a href="https://twitter.com/sahilmomin"><i class="fab fa-twitter"></i>Twitter</a></li>
             </ul>
-            <button>Download CV</button>
+            <button class="menu__myInfo-downloadCV">Download CV</button>
         </div>
     </header>
+
+    <main>
+        <section class="home">
+            <h1 class="home__name">Sahil Momin</h1>
+            <h3 class="home__work1">FrontEnd Developer</h3>
+            <h3 class="home__work2">Engineer</h3>
+            <h3 class="home__work3">Volunteer, Eager Beaver</h3>
+        </section>
+
+        <section class="about">
+            <h2 class="about__title">About Me</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Provident asperiores quas rem laboriosam aliquid iure ab? Provident illo aspernatur corrupti mollitia! Doloremque quo ipsa laboriosam. Vitae odio consequatur culpa omnis?</p>
+        </section>
+
+        <section class="resume">
+            <h2 class="resume__heading">Resume</h2>
+            <div class="resume__journey">
+                <div class="resume__education">
+                    <h3 class="resume__education--heading">Education</h3>
+                    <ul class="resume__education--list">
+                        <li class="resume__education--item">
+                            <div class="resume__education--school">
+                                <h4>2020</h4>
+                                <p>Juno College</p>
+                            </div>
+                            <div class="resume__education--degree">
+                                <h3>Web Development Bootcamp</h3>
+                                <h5>JavaScript Accelerated</h5>
+                                <h5>Web Development Accelerated</h5>
+                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni officiis delectus fugiat dolor, similique consequuntur quae quidem vel magnam unde?</p>
+                            </div>
+                        </li>
+                        <li class="resume__education--item">
+                            <div class="resume__education--school">
+                                <h4>2010</h4>
+                                <p>University of Mumbai</p>
+                            </div>
+                            <div class="resume__education--degree">
+                                <h3>Bachelor of Engineering - Mechanical</h3>
+                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni officiis delectus fugiat dolor, similique consequuntur quae quidem vel magnam unde?</p>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+                <div class="resume__experience">
+                    <h3 class="resume__experience--heading">Education</h3>
+                    <ul class="resume__experience--list">
+                        <li class="resume__experience--item">
+                            <div class="resume__experience--company">
+                                <h4>2018-2020</h4>
+                                <p>DEI Consulting Engineers, Waterloo, ON</p>
+                            </div>
+                            <div class="resume__experience--position">
+                                <h3>Mechanical Designer</h3>
+                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni officiis delectus fugiat dolor, similique consequuntur quae quidem vel magnam unde?</p>
+                            </div>
+                        </li>
+                        <li class="resume__experience--item">
+                            <div class="resume__experience--company">
+                                <h4>2017-2018</h4>
+                                <p>Brunswick Steel, Winnipeg, MB</p>
+                            </div>
+                            <div class="resume__experience--position">
+                                <h3>Quality Technologist</h3>
+                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni officiis delectus fugiat dolor, similique consequuntur quae quidem vel magnam unde?</p>
+                            </div>
+                        </li>
+                        <li class="resume__experience--item">
+                            <div class="resume__experience--company">
+                                <h4>2016-2017</h4>
+                                <p>Murano Gardens, Winnipeg, MB</p>
+                            </div>
+                            <div class="resume__experience--position">
+                                <h3>Construction Coordinator, Handyman</h3>
+                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni officiis delectus fugiat dolor, similique consequuntur quae quidem vel magnam unde?</p>
+                            </div>
+                        </li>
+                        <li class="resume__experience--item">
+                            <div class="resume__experience--company">
+                                <h4>2012-2016</h4>
+                                <p>Friesens Corporation, Altona, MB</p>
+                            </div>
+                            <div class="resume__experience--position">
+                                <h3>CNC Programmer-Operator/ Quality Tech</h3>
+                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni officiis delectus fugiat dolor, similique consequuntur quae quidem vel magnam unde?</p>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="skill">
+                <ul class="skill__type">
+                    <li class="skill__item">
+                        <ul class="skill__item--list">
+                            <h4 class="skill__item--name">Web Development Skills</h4>
+                            <li class="skill__item--option">
+                                <div>
+                                    <h5>skill</h5>
+                                    <h6>100%</h6>
+                                </div>
+                                <div class="skill__item--percentBorder">
+                                    <div class="skill__item--percentBar"></div>
+                                </div>
+                            </li>
+                            <li class="skill__item--option">
+                                <div>
+                                    <h5>skill</h5>
+                                    <h6>100%</h6>
+                                </div>
+                                <div class="skill__item--percentBorder">
+                                    <div class="skill__item--percentBar"></div>
+                                </div>
+                            </li>
+                            <li class="skill__item--option">
+                                <div>
+                                    <h5>skill</h5>
+                                    <h6>100%</h6>
+                                </div>
+                                <div class="skill__item--percentBorder">
+                                    <div class="skill__item--percentBar"></div>
+                                </div>
+                            </li>
+                            <li class="skill__item--option">
+                                <div>
+                                    <h5>skill</h5>
+                                    <h6>100%</h6>
+                                </div>
+                                <div class="skill__item--percentBorder">
+                                    <div class="skill__item--percentBar"></div>
+                                </div>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="skill__item">
+                        <ul class="skill__item--list">
+                            <h4 class="skill__item--name">Critical Skills</h4>
+                            <li class="skill__item--option">
+                                <div>
+                                    <h5>skill</h5>
+                                    <h6>100%</h6>
+                                </div>
+                                <div class="skill__item--percentBorder">
+                                    <div class="skill__item--percentBar"></div>
+                                </div>
+                            </li>
+                            <li class="skill__item--option">
+                                <div>
+                                    <h5>skill</h5>
+                                    <h6>100%</h6>
+                                </div>
+                                <div class="skill__item--percentBorder">
+                                    <div class="skill__item--percentBar"></div>
+                                </div>
+                            </li>
+                            <li class="skill__item--option">
+                                <div>
+                                    <h5>skill</h5>
+                                    <h6>100%</h6>
+                                </div>
+                                <div class="skill__item--percentBorder">
+                                    <div class="skill__item--percentBar"></div>
+                                </div>
+                            </li>
+                            <li class="skill__item--option">
+                                <div>
+                                    <h5>skill</h5>
+                                    <h6>100%</h6>
+                                </div>
+                                <div class="skill__item--percentBorder">
+                                    <div class="skill__item--percentBar"></div>
+                                </div>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="skill__item">
+                        <ul class="skill__item--list">
+                            <h4 class="skill__item--name">Other Interests</h4>
+                            <li class="skill__item--option">
+                                <div>
+                                    <h5>skill</h5>
+                                    <h6>100%</h6>
+                                </div>
+                                <div class="skill__item--percentBorder">
+                                    <div class="skill__item--percentBar"></div>
+                                </div>
+                            </li>
+                            <li class="skill__item--option">
+                                <div>
+                                    <h5>skill</h5>
+                                    <h6>100%</h6>
+                                </div>
+                                <div class="skill__item--percentBorder">
+                                    <div class="skill__item--percentBar"></div>
+                                </div>
+                            </li>
+                            <li class="skill__item--option">
+                                <div>
+                                    <h5>skill</h5>
+                                    <h6>100%</h6>
+                                </div>
+                                <div class="skill__item--percentBorder">
+                                    <div class="skill__item--percentBar"></div>
+                                </div>
+                            </li>
+                            <li class="skill__item--option">
+                                <div>
+                                    <h5>skill</h5>
+                                    <h6>100%</h6>
+                                </div>
+                                <div class="skill__item--percentBorder">
+                                    <div class="skill__item--percentBar"></div>
+                                </div>
+                            </li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+
+        </section>
+
+        <section class="portfolio">
+
+        </section>
+
+        <section class="service">
+
+        </section>
+
+        <section class="contact">
+
+        </section>
+
+    </main>
 </body>
 </html>
