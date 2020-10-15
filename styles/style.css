@@ -252,8 +252,8 @@ html {
 }
 
 body {
-  font-size: 1.6rem;
-  line-height: 1.4;
+  font-size: 1.5rem;
+  line-height: 1.6;
   font-family: 'Poppins', sans-serif;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -279,15 +279,6 @@ img {
   display: block;
 }
 
-h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
-  font-family: 'Roboto Slab', serif;
-}
-
 a {
   font-family: 'Roboto Slab', serif;
   text-decoration: none;
@@ -306,7 +297,7 @@ li {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  height: 100vh;
+  min-height: 100vh;
   text-align: center;
 }
 
@@ -318,20 +309,33 @@ li {
 }
 
 .menu__bar--listOption {
-  padding: 1rem;
+  padding-bottom: 0.5rem;
   border-bottom: 1px solid lightgray;
   width: 100%;
+  max-height: 16.5vh;
 }
 
 .menu__bar--listOption a {
-  width: 10rem;
   height: 100%;
-  padding: 1rem;
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease;
 }
 
 .menu__bar--listOption a i {
+  width: 100%;
+  padding: 1rem;
   font-size: 2.4rem;
   padding-bottom: 0.5rem;
+}
+
+.menu__bar--listOption a p {
+  width: 100%;
+  padding: 0 1rem 1rem;
+  line-height: 1.6rem;
+}
+
+.menu__bar--listOption a:hover, .menu__bar--listOption a:focus, .menu__bar--listOption a:active {
+  color: orange;
 }
 
 .menu__myInfo {
@@ -415,4 +419,44 @@ main {
 
 main section {
   margin: 2rem auto;
+  min-height: 100vh;
+}
+
+main .showHide {
+  display: none;
+}
+
+main h2 {
+  font-size: 3.2rem;
+  font-weight: 600;
+}
+
+main h3 {
+  font-size: 2.1rem;
+}
+
+main .home {
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+main .home__name {
+  font-size: 6rem;
+}
+
+main .home h3 {
+  font-size: 2.1rem;
+  font-weight: 300;
+}
+
+main .about {
+  display: block;
 }

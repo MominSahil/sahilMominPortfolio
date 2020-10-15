@@ -5,5 +5,43 @@ main {
     // border: 2px solid red;
     section {
         margin: 2rem auto;
+        min-height: 100vh;
+    }
+    .showHide {
+        display: none;
+    }
+
+    h2 {
+        font-size: 3.2rem;
+        font-weight: 600;
+    }
+    h3 {
+        font-size: 2.1rem;
+    }
+
+    .home {
+        // display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        &__name {
+            font-size: 6rem;
+        }
+        h3 {
+            font-size: 2.1rem;
+            font-weight: 300;
+
+        }
+    }
+
+    .about {
+        display: block;
+    }
+
+    .resume {
+        // display: block;
+        &__heading {
+            
+        }
     }
 }
