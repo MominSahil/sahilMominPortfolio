@@ -1,0 +1,94 @@
+// Vertical navigation bar and info page
+.menu {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 40rem;
+    display: flex;
+    height: 100vh;
+    text-align: center;
+    &__bar {
+        width: 10rem;
+        font-size: 1.2rem;
+        text-align: center;
+        margin-top: 1rem;
+    }
+    &__bar--listOption {
+        padding: 1rem;
+        border-bottom: 1px solid lightgray;
+        width: 100%;
+        a {
+            width: 10rem;
+            height: 100%;
+            padding: 1rem;
+            i {
+                font-size: 2.4rem;
+                padding-bottom: 0.5rem;
+            }
+        }
+    }
+    
+    &__myInfo {
+        width: 30rem;
+        padding: 3rem 2rem;
+        text-align: center;
+        background-color: rgb(56, 63, 70);
+    }
+    &__myInfo--myPic {
+        width: 180px;
+        height: 180px;
+        overflow: hidden;
+        border-radius: 50%;
+        margin: 2rem auto;
+        img {
+            margin: 0 auto;
+            display: block;
+            height: 100%;
+            width: 100%;
+        }
+    }
+    &__myInfo--name {
+        padding: 2rem 0 0;
+    }
+    &__myInfo--work,
+    &__myInfo--socialIcons {
+        font-size: 1.5rem;
+        font-weight: 400;
+        padding: 1rem;
+
+    }
+    &__myInfo--social {
+        display: flex;
+        justify-content: center;
+    }
+    &__myInfo--socialIcons {
+        width: 4rem;
+        height: 4rem;
+        text-align: center;
+        a {
+            font-size: 2rem;
+            transition: all 0.3s ease;
+            &:hover,
+            &:focus,
+            &:active {
+                color: orange;
+                font-size: 2.2rem;
+            }
+        }
+    }
+    &__myInfo--downloadCV {
+        margin: 2rem 0;
+        padding: 1rem 2rem;
+        border: 2px solid white;
+        background-color: rgb(56, 63, 70);
+        color: #FFF;
+        border-radius: 10px;
+        transition: all 0.5s ease;
+        &:hover,
+        &:focus,
+        &:active {
+            background-color: orange;
+        }
+    }
+
+}

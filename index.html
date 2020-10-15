@@ -5,263 +5,357 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Sahil Momin</title>
     <link rel="icon" type="image/png" href="./assets/icons8-portfolio-48.png">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&family=Roboto+Slab&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.1/css/all.css" integrity="sha384-vp86vTRFVJgpjF9jiIGPEEqYqlDwgyBgEF109VFjmqGmIY/Y4HV4d3Gp2irVfcrp" crossorigin="anonymous">
+    <link rel="stylesheet" href="./styles/style.css">
 <body>
     <header class="menu">
         <nav class="menu__bar">
             <ul class="menu__bar--list">
-                <li class="menu__bar--listOption">Home</li>
-                <li class="menu__bar--listOption">About Me</li>
-                <li class="menu__bar--listOption">Resume</li>
-                <li class="menu__bar--listOption">Portfolio</li>
-                <li class="menu__bar--listOption">Community Involvement</li>
-                <li class="menu__bar--listOption">Contact</li>
+                <li class="menu__bar--listOption">
+                    <a href="">
+                        <i class="fas fa-home"></i>
+                        <p>Home</p>
+                    </a>
+                </li>
+                <li class="menu__bar--listOption">
+                    <a href="">
+                        <i class="fas fa-user"></i>
+                        <p>About Me</p>
+                    </a>
+                </li>
+                <li class="menu__bar--listOption">
+                    <a href="">
+                        <i class="fas fa-graduation-cap"></i>
+                        <p>Resume</p>
+                    </a>
+                </li>
+                <li class="menu__bar--listOption">
+                    <a href="">
+                        <i class="fas fa-briefcase"></i>
+                        <p>Portfolio</p>
+                    </a>
+                </li>
+                <li class="menu__bar--listOption">
+                    <a href="">
+                        <i class="fas fa-hands-helping"></i>
+                        <p>Community Involvement</p>
+                    </a>
+                </li>
+                <li class="menu__bar--listOption">
+                    <a href="">
+                        <i class="fas fa-envelope"></i>
+                        <p>Contact</p>
+                    </a>
+                </li>
             </ul>
         </nav>
         <div class="menu__myInfo">
-            <img src="./assets/icons8-portfolio-48.png" alt="" class="menu__myInfo-myPic">
-            <h2 class="menu__myInfo--myName">Sahil Momin</h2>
-            <h3 class="menu__myInfo--myWork">FrontEnd Developer</h3>
+            <div class="menu__myInfo--myPic"><img src="./assets/displayPic.jpg" alt="Sahil" class="imageDP"></div>
+            <h2 class="menu__myInfo--name">Sahil Momin</h2>
+            <h3 class="menu__myInfo--work">FrontEnd Developer</h3>
             <ul class="menu__myInfo--social">
-                <li class="menu__myInfo--socialIcons"><a href="https://www.linkedin.com/in/sahilmomin/"><i class="fab fa-linkedin-in"></i>LinkedIn</a></li>
-                <li class="menu__myInfo--socialIcons"><a href="https://github.com/MominSahil"><i class="fab fa-github"></i>GitHub</a></li>
-                <li class="menu__myInfo--socialIcons"><a href="https://twitter.com/sahilmomin"><i class="fab fa-twitter"></i>Twitter</a></li>
+                <li class="menu__myInfo--socialIcons"><a href="https://www.linkedin.com/in/sahilmomin/"><i class="fab fa-linkedin-in"></i></a></li>
+                <li class="menu__myInfo--socialIcons"><a href="https://github.com/MominSahil"><i class="fab fa-github"></i></a></li>
+                <li class="menu__myInfo--socialIcons"><a href="https://twitter.com/sahilmomin"><i class="fab fa-twitter"></i></a></li>
             </ul>
-            <button class="menu__myInfo-downloadCV">Download CV</button>
+            <button class="menu__myInfo--downloadCV">Download CV</button>
         </div>
     </header>
 
     <main>
-        <section class="home">
-            <h1 class="home__name">Sahil Momin</h1>
-            <h3 class="home__work1">FrontEnd Developer</h3>
-            <h3 class="home__work2">Engineer</h3>
-            <h3 class="home__work3">Volunteer, Eager Beaver</h3>
-        </section>
-
-        <section class="about">
-            <h2 class="about__title">About Me</h2>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Provident asperiores quas rem laboriosam aliquid iure ab? Provident illo aspernatur corrupti mollitia! Doloremque quo ipsa laboriosam. Vitae odio consequatur culpa omnis?</p>
-        </section>
-
-        <section class="resume">
-            <h2 class="resume__heading">Resume</h2>
-            <div class="resume__journey">
-                <div class="resume__education">
-                    <h3 class="resume__education--heading">Education</h3>
-                    <ul class="resume__education--list">
-                        <li class="resume__education--item">
-                            <div class="resume__education--school">
-                                <h4>2020</h4>
-                                <p>Juno College</p>
-                            </div>
-                            <div class="resume__education--degree">
-                                <h3>Web Development Bootcamp</h3>
-                                <h5>JavaScript Accelerated</h5>
-                                <h5>Web Development Accelerated</h5>
-                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni officiis delectus fugiat dolor, similique consequuntur quae quidem vel magnam unde?</p>
-                            </div>
+        <div class="wrapper">
+            <section class="home">
+                <h1 class="home__name">Sahil Momin</h1>
+                <h3 class="home__work1">FrontEnd Developer</h3>
+                <h3 class="home__work2">Engineer</h3>
+                <h3 class="home__work3">Volunteer, Eager Beaver</h3>
+            </section>
+    
+            <section class="about">
+                <h2 class="about__title">About Me</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Provident asperiores quas rem laboriosam aliquid iure ab? Provident illo aspernatur corrupti mollitia! Doloremque quo ipsa laboriosam. Vitae odio consequatur culpa omnis?</p>
+            </section>
+    
+            <section class="resume">
+                <h2 class="resume__heading">Resume</h2>
+                <div class="resume__journey">
+                    <div class="resume__education">
+                        <h3 class="resume__education--heading">Education</h3>
+                        <ul class="resume__education--list">
+                            <li class="resume__education--item">
+                                <div class="resume__education--school">
+                                    <h4>2020</h4>
+                                    <p>Juno College</p>
+                                </div>
+                                <div class="resume__education--degree">
+                                    <h3>Web Development Bootcamp</h3>
+                                    <h5>JavaScript Accelerated</h5>
+                                    <h5>Web Development Accelerated</h5>
+                                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni officiis delectus fugiat dolor, similique consequuntur quae quidem vel magnam unde?</p>
+                                </div>
+                            </li>
+                            <li class="resume__education--item">
+                                <div class="resume__education--school">
+                                    <h4>2010</h4>
+                                    <p>University of Mumbai</p>
+                                </div>
+                                <div class="resume__education--degree">
+                                    <h3>Bachelor of Engineering - Mechanical</h3>
+                                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni officiis delectus fugiat dolor, similique consequuntur quae quidem vel magnam unde?</p>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="resume__experience">
+                        <h3 class="resume__experience--heading">Education</h3>
+                        <ul class="resume__experience--list">
+                            <li class="resume__experience--item">
+                                <div class="resume__experience--company">
+                                    <h4>2018-2020</h4>
+                                    <p>DEI Consulting Engineers, Waterloo, ON</p>
+                                </div>
+                                <div class="resume__experience--position">
+                                    <h3>Mechanical Designer</h3>
+                                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni officiis delectus fugiat dolor, similique consequuntur quae quidem vel magnam unde?</p>
+                                </div>
+                            </li>
+                            <li class="resume__experience--item">
+                                <div class="resume__experience--company">
+                                    <h4>2017-2018</h4>
+                                    <p>Brunswick Steel, Winnipeg, MB</p>
+                                </div>
+                                <div class="resume__experience--position">
+                                    <h3>Quality Technologist</h3>
+                                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni officiis delectus fugiat dolor, similique consequuntur quae quidem vel magnam unde?</p>
+                                </div>
+                            </li>
+                            <li class="resume__experience--item">
+                                <div class="resume__experience--company">
+                                    <h4>2016-2017</h4>
+                                    <p>Murano Gardens, Winnipeg, MB</p>
+                                </div>
+                                <div class="resume__experience--position">
+                                    <h3>Construction Coordinator, Handyman</h3>
+                                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni officiis delectus fugiat dolor, similique consequuntur quae quidem vel magnam unde?</p>
+                                </div>
+                            </li>
+                            <li class="resume__experience--item">
+                                <div class="resume__experience--company">
+                                    <h4>2012-2016</h4>
+                                    <p>Friesens Corporation, Altona, MB</p>
+                                </div>
+                                <div class="resume__experience--position">
+                                    <h3>CNC Programmer-Operator/ Quality Tech</h3>
+                                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni officiis delectus fugiat dolor, similique consequuntur quae quidem vel magnam unde?</p>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+    
+                <div class="skill">
+                    <ul class="skill__type">
+                        <li class="skill__item">
+                            <ul class="skill__item--list">
+                                <h4 class="skill__item--name">Web Development Skills</h4>
+                                <li class="skill__item--option">
+                                    <div>
+                                        <h5>skill</h5>
+                                        <h6>100%</h6>
+                                    </div>
+                                    <div class="skill__item--percentBorder">
+                                        <div class="skill__item--percentBar"></div>
+                                    </div>
+                                </li>
+                                <li class="skill__item--option">
+                                    <div>
+                                        <h5>skill</h5>
+                                        <h6>100%</h6>
+                                    </div>
+                                    <div class="skill__item--percentBorder">
+                                        <div class="skill__item--percentBar"></div>
+                                    </div>
+                                </li>
+                                <li class="skill__item--option">
+                                    <div>
+                                        <h5>skill</h5>
+                                        <h6>100%</h6>
+                                    </div>
+                                    <div class="skill__item--percentBorder">
+                                        <div class="skill__item--percentBar"></div>
+                                    </div>
+                                </li>
+                                <li class="skill__item--option">
+                                    <div>
+                                        <h5>skill</h5>
+                                        <h6>100%</h6>
+                                    </div>
+                                    <div class="skill__item--percentBorder">
+                                        <div class="skill__item--percentBar"></div>
+                                    </div>
+                                </li>
+                            </ul>
                         </li>
-                        <li class="resume__education--item">
-                            <div class="resume__education--school">
-                                <h4>2010</h4>
-                                <p>University of Mumbai</p>
-                            </div>
-                            <div class="resume__education--degree">
-                                <h3>Bachelor of Engineering - Mechanical</h3>
-                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni officiis delectus fugiat dolor, similique consequuntur quae quidem vel magnam unde?</p>
-                            </div>
+                        <li class="skill__item">
+                            <ul class="skill__item--list">
+                                <h4 class="skill__item--name">Critical Skills</h4>
+                                <li class="skill__item--option">
+                                    <div>
+                                        <h5>skill</h5>
+                                        <h6>100%</h6>
+                                    </div>
+                                    <div class="skill__item--percentBorder">
+                                        <div class="skill__item--percentBar"></div>
+                                    </div>
+                                </li>
+                                <li class="skill__item--option">
+                                    <div>
+                                        <h5>skill</h5>
+                                        <h6>100%</h6>
+                                    </div>
+                                    <div class="skill__item--percentBorder">
+                                        <div class="skill__item--percentBar"></div>
+                                    </div>
+                                </li>
+                                <li class="skill__item--option">
+                                    <div>
+                                        <h5>skill</h5>
+                                        <h6>100%</h6>
+                                    </div>
+                                    <div class="skill__item--percentBorder">
+                                        <div class="skill__item--percentBar"></div>
+                                    </div>
+                                </li>
+                                <li class="skill__item--option">
+                                    <div>
+                                        <h5>skill</h5>
+                                        <h6>100%</h6>
+                                    </div>
+                                    <div class="skill__item--percentBorder">
+                                        <div class="skill__item--percentBar"></div>
+                                    </div>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="skill__item">
+                            <ul class="skill__item--list">
+                                <h4 class="skill__item--name">Other Interests</h4>
+                                <li class="skill__item--option">
+                                    <div>
+                                        <h5>skill</h5>
+                                        <h6>100%</h6>
+                                    </div>
+                                    <div class="skill__item--percentBorder">
+                                        <div class="skill__item--percentBar"></div>
+                                    </div>
+                                </li>
+                                <li class="skill__item--option">
+                                    <div>
+                                        <h5>skill</h5>
+                                        <h6>100%</h6>
+                                    </div>
+                                    <div class="skill__item--percentBorder">
+                                        <div class="skill__item--percentBar"></div>
+                                    </div>
+                                </li>
+                                <li class="skill__item--option">
+                                    <div>
+                                        <h5>skill</h5>
+                                        <h6>100%</h6>
+                                    </div>
+                                    <div class="skill__item--percentBorder">
+                                        <div class="skill__item--percentBar"></div>
+                                    </div>
+                                </li>
+                                <li class="skill__item--option">
+                                    <div>
+                                        <h5>skill</h5>
+                                        <h6>100%</h6>
+                                    </div>
+                                    <div class="skill__item--percentBorder">
+                                        <div class="skill__item--percentBar"></div>
+                                    </div>
+                                </li>
+                            </ul>
                         </li>
                     </ul>
                 </div>
-                <div class="resume__experience">
-                    <h3 class="resume__experience--heading">Education</h3>
-                    <ul class="resume__experience--list">
-                        <li class="resume__experience--item">
-                            <div class="resume__experience--company">
-                                <h4>2018-2020</h4>
-                                <p>DEI Consulting Engineers, Waterloo, ON</p>
-                            </div>
-                            <div class="resume__experience--position">
-                                <h3>Mechanical Designer</h3>
-                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni officiis delectus fugiat dolor, similique consequuntur quae quidem vel magnam unde?</p>
-                            </div>
-                        </li>
-                        <li class="resume__experience--item">
-                            <div class="resume__experience--company">
-                                <h4>2017-2018</h4>
-                                <p>Brunswick Steel, Winnipeg, MB</p>
-                            </div>
-                            <div class="resume__experience--position">
-                                <h3>Quality Technologist</h3>
-                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni officiis delectus fugiat dolor, similique consequuntur quae quidem vel magnam unde?</p>
-                            </div>
-                        </li>
-                        <li class="resume__experience--item">
-                            <div class="resume__experience--company">
-                                <h4>2016-2017</h4>
-                                <p>Murano Gardens, Winnipeg, MB</p>
-                            </div>
-                            <div class="resume__experience--position">
-                                <h3>Construction Coordinator, Handyman</h3>
-                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni officiis delectus fugiat dolor, similique consequuntur quae quidem vel magnam unde?</p>
-                            </div>
-                        </li>
-                        <li class="resume__experience--item">
-                            <div class="resume__experience--company">
-                                <h4>2012-2016</h4>
-                                <p>Friesens Corporation, Altona, MB</p>
-                            </div>
-                            <div class="resume__experience--position">
-                                <h3>CNC Programmer-Operator/ Quality Tech</h3>
-                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni officiis delectus fugiat dolor, similique consequuntur quae quidem vel magnam unde?</p>
-                            </div>
-                        </li>
-                    </ul>
+    
+            </section>
+    
+            <section class="portfolio">
+                <h2 class="portfolio__heading">My growth through Projects</h2>
+                <div class="portfolio__project">
+                    <div class="portfolio__project--text">
+                        <h3 class="portfolio__project--title">Trivia App</h3>
+                        <p class="portfolio__project--description">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Mollitia itaque, minus officiis optio numquam obcaecati ipsa aspernatur iusto maxime accusantium.</p>
+                    </div>
+                    <a href="https://thegloriousalpacas.github.io/trivia-time/" class="portfolio__project--image"><img src="./assets/icons8-portfolio-48.png" alt="logo of trivia app game"></a>
                 </div>
-            </div>
-
-            <div class="skill">
-                <ul class="skill__type">
-                    <li class="skill__item">
-                        <ul class="skill__item--list">
-                            <h4 class="skill__item--name">Web Development Skills</h4>
-                            <li class="skill__item--option">
-                                <div>
-                                    <h5>skill</h5>
-                                    <h6>100%</h6>
-                                </div>
-                                <div class="skill__item--percentBorder">
-                                    <div class="skill__item--percentBar"></div>
-                                </div>
-                            </li>
-                            <li class="skill__item--option">
-                                <div>
-                                    <h5>skill</h5>
-                                    <h6>100%</h6>
-                                </div>
-                                <div class="skill__item--percentBorder">
-                                    <div class="skill__item--percentBar"></div>
-                                </div>
-                            </li>
-                            <li class="skill__item--option">
-                                <div>
-                                    <h5>skill</h5>
-                                    <h6>100%</h6>
-                                </div>
-                                <div class="skill__item--percentBorder">
-                                    <div class="skill__item--percentBar"></div>
-                                </div>
-                            </li>
-                            <li class="skill__item--option">
-                                <div>
-                                    <h5>skill</h5>
-                                    <h6>100%</h6>
-                                </div>
-                                <div class="skill__item--percentBorder">
-                                    <div class="skill__item--percentBar"></div>
-                                </div>
-                            </li>
-                        </ul>
-                    </li>
-                    <li class="skill__item">
-                        <ul class="skill__item--list">
-                            <h4 class="skill__item--name">Critical Skills</h4>
-                            <li class="skill__item--option">
-                                <div>
-                                    <h5>skill</h5>
-                                    <h6>100%</h6>
-                                </div>
-                                <div class="skill__item--percentBorder">
-                                    <div class="skill__item--percentBar"></div>
-                                </div>
-                            </li>
-                            <li class="skill__item--option">
-                                <div>
-                                    <h5>skill</h5>
-                                    <h6>100%</h6>
-                                </div>
-                                <div class="skill__item--percentBorder">
-                                    <div class="skill__item--percentBar"></div>
-                                </div>
-                            </li>
-                            <li class="skill__item--option">
-                                <div>
-                                    <h5>skill</h5>
-                                    <h6>100%</h6>
-                                </div>
-                                <div class="skill__item--percentBorder">
-                                    <div class="skill__item--percentBar"></div>
-                                </div>
-                            </li>
-                            <li class="skill__item--option">
-                                <div>
-                                    <h5>skill</h5>
-                                    <h6>100%</h6>
-                                </div>
-                                <div class="skill__item--percentBorder">
-                                    <div class="skill__item--percentBar"></div>
-                                </div>
-                            </li>
-                        </ul>
-                    </li>
-                    <li class="skill__item">
-                        <ul class="skill__item--list">
-                            <h4 class="skill__item--name">Other Interests</h4>
-                            <li class="skill__item--option">
-                                <div>
-                                    <h5>skill</h5>
-                                    <h6>100%</h6>
-                                </div>
-                                <div class="skill__item--percentBorder">
-                                    <div class="skill__item--percentBar"></div>
-                                </div>
-                            </li>
-                            <li class="skill__item--option">
-                                <div>
-                                    <h5>skill</h5>
-                                    <h6>100%</h6>
-                                </div>
-                                <div class="skill__item--percentBorder">
-                                    <div class="skill__item--percentBar"></div>
-                                </div>
-                            </li>
-                            <li class="skill__item--option">
-                                <div>
-                                    <h5>skill</h5>
-                                    <h6>100%</h6>
-                                </div>
-                                <div class="skill__item--percentBorder">
-                                    <div class="skill__item--percentBar"></div>
-                                </div>
-                            </li>
-                            <li class="skill__item--option">
-                                <div>
-                                    <h5>skill</h5>
-                                    <h6>100%</h6>
-                                </div>
-                                <div class="skill__item--percentBorder">
-                                    <div class="skill__item--percentBar"></div>
-                                </div>
-                            </li>
-                        </ul>
-                    </li>
-                </ul>
-            </div>
-
-        </section>
-
-        <section class="portfolio">
-
-        </section>
-
-        <section class="service">
-
-        </section>
-
-        <section class="contact">
-
-        </section>
+                <div class="portfolio__project">
+                    <div class="portfolio__project--text">
+                        <h3 class="portfolio__project--title">Harry Potter Adventure</h3>
+                        <p class="portfolio__project--description">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Mollitia itaque, minus officiis optio numquam obcaecati ipsa aspernatur iusto maxime accusantium.</p>
+                    </div>
+                    <a href="https://chiakuo.github.io/sahilMominYouchiaKuoProjectFour/" class="portfolio__project--image"><img src="./assets/icons8-portfolio-48.png" alt="logo of Harry Potter Adventure game"></a>
+                </div>
+                <div class="portfolio__project">
+                    <div class="portfolio__project--text">
+                        <h3 class="portfolio__project--title">Room of requirement</h3>
+                        <p class="portfolio__project--description">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Mollitia itaque, minus officiis optio numquam obcaecati ipsa aspernatur iusto maxime accusantium.</p>
+                    </div>
+                    <a href="https://mominsahil.github.io/sahilMominProject5/" class="portfolio__project--image"><img src="./assets/icons8-portfolio-48.png" alt="main page of room of requirement app"></a>
+                </div>
+                <div class="portfolio__project">
+                    <div class="portfolio__project--text">
+                        <h3 class="portfolio__project--title">VS Code Shortcuts Quiz</h3>
+                        <p class="portfolio__project--description">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Mollitia itaque, minus officiis optio numquam obcaecati ipsa aspernatur iusto maxime accusantium.</p>
+                    </div>
+                    <a href="https://mominsahil.github.io/sahilMominProjectThree/" class="portfolio__project--image"><img src="./assets/icons8-portfolio-48.png" alt="logo of VS Code Shortcuts quiz app"></a>
+                </div>
+                <div class="portfolio__project">
+                    <div class="portfolio__project--text">
+                        <h3 class="portfolio__project--title">Beachstays Travel Website</h3>
+                        <p class="portfolio__project--description">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Mollitia itaque, minus officiis optio numquam obcaecati ipsa aspernatur iusto maxime accusantium.</p>
+                    </div>
+                    <a href="https://mominsahil.github.io/sahilMominProjectTwo/home.html" class="portfolio__project--image"><img src="./assets/icons8-portfolio-48.png" alt="Beachstays travel logo"></a>
+                </div>
+            </section>
+    
+            <section class="service">
+                <h2 class="service__heading">Giving Back to Society</h2>
+                <div class="service__type">
+                    <div class="service__type--text">
+                        <h3 class="service__type--title">Blood Donation</h3>
+                        <p class="service__type--description">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Mollitia itaque, minus officiis optio numquam obcaecati ipsa aspernatur iusto maxime accusantium.</p>
+                    </div>
+                    <a href="https://www.blood.ca/en" class="service__type--image"><img src="./assets/icons8-portfolio-48.png" alt="Canadian Blood Services logo"></a>
+                </div>
+                <div class="service__type">
+                    <div class="service__type--text">
+                        <h3 class="service__type--title">Beachstays Travel Website</h3>
+                        <p class="service__type--description">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Mollitia itaque, minus officiis optio numquam obcaecati ipsa aspernatur iusto maxime accusantium.</p>
+                    </div>
+                    <a href="" class="service__type--image"><img src="./assets/icons8-portfolio-48.png" alt="Volleyball indoor court"></a>
+                </div>
+                <div class="service__type">
+                    <div class="service__type--text">
+                        <h3 class="service__type--title">Ice Castle Winnipeg</h3>
+                        <p class="service__type--description">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Mollitia itaque, minus officiis optio numquam obcaecati ipsa aspernatur iusto maxime accusantium.</p>
+                    </div>
+                    <a href="https://www.travelmanitoba.com/blog/post/everything-you-need-to-know-about-winnipegs-magical-ice-castles/" class="service__type--image"><img src="./assets/icons8-portfolio-48.png" alt="Ice Castle in Winnipeg, MB."></a>
+                </div>
+    
+            </section>
+    
+            <section class="contact">
+                <h2 class="contact__heading">Contact Me</h2>
+                <p class="contact__address">Address: Guelph, ON.</p>
+                <p class="contact__email">Email: <a href="">sahil_momin1987@yahoo.com</a></p>
+                <p class="contact__phone">Phone: 519-993-6786</p>
+            </section>
+        </div>
 
     </main>
 </body>
