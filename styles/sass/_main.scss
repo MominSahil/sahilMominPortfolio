@@ -146,13 +146,15 @@ main {
         }
         &__project--text {
             width: 75%;
+            padding-right: 2rem;
         }
         &__project--image {
             width: 25%;
-            &:hover {
-                position: absolute;
-                right: 0;
-            }
+            height: 200px;
+            // &:hover {
+            //     position: absolute;
+            //     right: 0;
+            // }
         }
     }
 
@@ -168,9 +170,28 @@ main {
         }
         &__type--text {
             width: 75%;
+            padding-right: 2rem;
         }
         &__type--image {
             width: 25%;
+            height: 200px;
+        }
+    }
+
+    // start of contact section
+    .contact {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        border-bottom: none;
+        &__email a {
+            color: $orange;
+            letter-spacing: 1.2px;
+            transition: all 0.3s ease;
+            &:hover,
+            &:focus {
+                color: red;
+            }
         }
     }
 }

@@ -9,9 +9,8 @@ $('a[href*=\\#]').on('click', function(e){
     }, 1000);
 });
 
-
 myApp.init = () => {
-    console.log("I am ready");
+    console.log("Hire me and I will remove this console log.");
 }
 
 $(document).ready(function(){

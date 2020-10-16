@@ -342,7 +342,7 @@ li {
 
 .menu__myInfo {
   width: 30rem;
-  padding: 3rem 2rem;
+  padding: 2rem 2rem;
   text-align: center;
   background-color: #383f46;
 }
@@ -352,7 +352,7 @@ li {
   height: 180px;
   overflow: hidden;
   border-radius: 50%;
-  margin: 2rem auto;
+  margin: 2rem auto 1rem;
 }
 
 .menu__myInfo--myPic img {
@@ -363,7 +363,7 @@ li {
 }
 
 .menu__myInfo--name {
-  padding: 2rem 0 0;
+  padding: 1.5rem 0 0;
   font-size: 3.6rem;
 }
 
@@ -598,15 +598,12 @@ main .portfolio__project {
 
 main .portfolio__project--text {
   width: 75%;
+  padding-right: 2rem;
 }
 
 main .portfolio__project--image {
   width: 25%;
-}
-
-main .portfolio__project--image:hover {
-  position: absolute;
-  right: 0;
+  height: 200px;
 }
 
 main .service__heading {
@@ -625,10 +622,37 @@ main .service__type {
 
 main .service__type--text {
   width: 75%;
+  padding-right: 2rem;
 }
 
 main .service__type--image {
   width: 25%;
+  height: 200px;
+}
+
+main .contact {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  border-bottom: none;
+}
+
+main .contact__email a {
+  color: #F58545;
+  letter-spacing: 1.2px;
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+}
+
+main .contact__email a:hover, main .contact__email a:focus {
+  color: red;
 }
 
 @media (max-width: 1024px) {
