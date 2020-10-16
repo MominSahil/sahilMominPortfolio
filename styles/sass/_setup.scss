@@ -15,7 +15,9 @@ h2,
 ul,
 span,
 h3,
-h4 {
+h4,
+h5,
+h6 {
     margin: 0;
     padding: 0;
 }
@@ -31,7 +33,7 @@ body {
      display: flex;
      flex-direction: column;
      background: #222;
-     color: #FFF;
+     color: $white;
      position: relative;
 }
 
@@ -59,7 +61,7 @@ img {
 a {
      font-family: 'Roboto Slab', serif;
      text-decoration: none;
-     color: #FFF;
+     color:$white;
 }
 
 li {

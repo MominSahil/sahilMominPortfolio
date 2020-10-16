@@ -15,7 +15,7 @@
     }
     &__bar--listOption {
         padding-bottom: 0.5rem;
-        border-bottom: 1px solid lightgray;
+        border-bottom: 1px solid $grey;
         width: 100%;
         max-height: 16.5vh;
         a {
@@ -35,7 +35,7 @@
             &:hover,
             &:focus,
             &:active {
-                color: orange;
+                color: $orange;
             }
         }
     }
@@ -44,7 +44,7 @@
         width: 30rem;
         padding: 3rem 2rem;
         text-align: center;
-        background-color: rgb(56, 63, 70);
+        background-color: $darkGrey;
     }
     &__myInfo--myPic {
         width: 180px;
@@ -61,30 +61,38 @@
     }
     &__myInfo--name {
         padding: 2rem 0 0;
+        font-size: 3.6rem;
     }
     &__myInfo--work,
     &__myInfo--socialIcons {
         font-size: 1.5rem;
         font-weight: 400;
         padding: 1rem;
-
+    }
+    &__myInfo--work {
+        font-size: 1.8rem;
+        color: $grey;
     }
     &__myInfo--social {
         display: flex;
         justify-content: center;
     }
     &__myInfo--socialIcons {
-        width: 4rem;
-        height: 4rem;
+        width: 4.5rem;
+        height: 4.5rem;
+        overflow: hidden;
         text-align: center;
         a {
             font-size: 2rem;
+            width: 100%;
+            padding: 0.5rem;
+            border-radius: 5px;
             transition: all 0.3s ease;
             &:hover,
             &:focus,
             &:active {
-                color: orange;
-                font-size: 2.2rem;
+                color: #000;
+                background-color: $orange;
             }
         }
     }
@@ -93,13 +101,13 @@
         padding: 1rem 2rem;
         border: 2px solid white;
         background-color: rgb(56, 63, 70);
-        color: #FFF;
-        border-radius: 10px;
-        transition: all 0.5s ease;
+        color: $white;
+        border-radius: 100px;
+        transition: all 0.3s ease;
         &:hover,
         &:focus,
         &:active {
-            background-color: orange;
+            background-color: $orange;
         }
     }
 

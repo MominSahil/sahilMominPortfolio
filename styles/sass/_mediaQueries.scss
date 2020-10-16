@@ -1,0 +1,47 @@
+@media (max-width: 1024px) {
+    body {
+        display: block;
+    }
+    .menu {
+        display: flex;
+        flex-direction: column-reverse;
+        width: 30rem;
+        position: relative;
+        text-align: center;
+        margin: 0;
+        z-index: 1;
+        top: 0;
+        right: 0rem;
+        background-color: $darkGrey;
+        &__bar {
+            width: 100%;
+        }
+        &__bar--listOption {
+            border-bottom: none;
+            i {
+                display: none;
+            }
+        }
+
+        &__myInfo {
+            padding: 1rem 2rem;
+        }
+        &__myInfo--myPic {
+            margin: 0 auto;
+        }
+        &__myInfo--name {
+            padding: 1rem 0 0;
+            line-height: 1.2;
+        }
+        &__myInfo--work {
+            padding: 0;
+        }
+        &__myInfo--downloadCV {
+            margin: 0.5rem 0 0;
+        }
+    }
+    main {
+        width: 100%;
+        
+    }
+}

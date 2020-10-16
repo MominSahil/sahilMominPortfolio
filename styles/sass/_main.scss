@@ -2,14 +2,17 @@ main {
     width: calc(100% - 40rem);
     position: absolute;
     right: 0;
-    // border: 2px solid red;
+    
+    // targeting all sections in main
     section {
         margin: 2rem auto;
         min-height: 100vh;
+        border-bottom: 2px solid $grey;
     }
-    .showHide {
-        display: none;
-    }
+    // class used to show or hide particular section
+    // .showHide {
+    //     display: none;
+    // }
 
     h2 {
         font-size: 3.2rem;
@@ -17,10 +20,21 @@ main {
     }
     h3 {
         font-size: 2.1rem;
+        font-weight: 600;
+        line-height: 1.2;
+        padding-bottom: 1rem;
+    }
+    h5 {
+        font-size: 1.5rem;
+        font-weight: 400;
+        color: $grey;
+        margin: 0;
+        line-height: 1.2;
     }
 
+    // start of home section
     .home {
-        // display: flex;
+        display: flex;
         flex-direction: column;
         justify-content: center;
         align-items: center;
@@ -30,18 +44,133 @@ main {
         h3 {
             font-size: 2.1rem;
             font-weight: 300;
-
         }
     }
 
+    // start of about me section
     .about {
         display: block;
+        &__title {
+            margin-bottom: 1rem;
+        }
     }
 
+    // start of resume section
     .resume {
-        // display: block;
+        display: block;
         &__heading {
-            
+            margin-bottom: 1rem;
+        }
+
+        // targeting timeline part of resume that shows education and experience on page
+        &__timeline {
+            display: flex;
+        }
+        &__journey {
+            width: 75%;
+        }
+
+        &__education {
+            margin-bottom: 3rem;
+            &--heading {
+                font-size: 2.1rem;
+                margin-bottom: 2rem;
+            }
+            h3:first-of-type {
+                padding-bottom: 0.5rem;
+            }
+            h5:last-of-type {
+                padding-bottom: 1rem;
+            }
+        }
+        &__education--item,
+        &__experience--item {
+            display: flex;
+            margin-bottom: 2rem;
+        }
+        &__education--school,
+        &__experience--company {
+            width: 33%;
+            text-align: right;
+            padding-right: 2rem;
+        }
+        &__education--degree,
+        &__experience--position {
+            width: 67%;
+            padding: 0 2rem 0 1rem;
+        }
+
+        &__experience--item {
+            display: flex;
+        }
+        
+        // targeting skills part of this page
+        .skill {
+            // border: 2px solid red;
+            width: 25%;
+            padding-left: 2rem;
+            &__item--option div {
+                width: 100%;
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+            }
+            &__item--percentBorder {
+                width: 100%;
+                height: 6px;
+                border: 1px solid $orange;
+                border-radius: 6px;
+                margin-bottom: 1rem;
+            }
+            &__item--percentBar {
+                display: inline-block;
+                width: 10px;
+                text-align: left;
+                margin: 0.1rem;
+                background-color: $orange;
+                height: 2px;
+            }
+            .critical {
+                margin: 2rem 0 0;
+            }
+        }
+    }
+
+    // start of Portfolio section
+    .portfolio {
+        &__heading {
+            margin-bottom: 1rem;
+        }
+        &__project {
+            display: flex;
+        }
+        &__project--text {
+            width: 75%;
+        }
+        &__project--image {
+            width: 25%;
+            &:hover {
+                position: absolute;
+                right: 0;
+            }
+        }
+    }
+
+    // start of service section
+    .service {
+        &__heading {
+            margin-bottom: 1rem;
+        }
+        &__type {
+            display: flex;
+            margin-bottom: 2rem;
+            align-items: flex-start;
+        }
+        &__type--text {
+            width: 75%;
+        }
+        &__type--image {
+            width: 25%;
         }
     }
 }
