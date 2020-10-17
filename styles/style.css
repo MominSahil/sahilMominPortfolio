@@ -257,16 +257,10 @@ body {
   font-size: 1.5rem;
   line-height: 1.6;
   font-family: 'Poppins', sans-serif;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
   background: #222;
   color: #EEE;
   position: relative;
+  overflow-x: hidden;
 }
 
 .wrapper {
@@ -294,13 +288,50 @@ li {
 .menu {
   position: fixed;
   top: 0;
-  left: 0;
+  right: calc(100vw - 40rem);
   width: 40rem;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
   min-height: 100vh;
   text-align: center;
+}
+
+.menu__dropdown {
+  display: none;
+  cursor: pointer;
+  width: 4rem;
+  height: 4rem;
+}
+
+.menu__dropdown i {
+  font-size: 2rem;
+}
+
+.menu__dropdown:hover, .menu__dropdown:focus, .menu__dropdown:active {
+  color: #F58545;
+}
+
+.menu .fa-times {
+  display: none;
+}
+
+.menu__hideDropdown {
+  -webkit-transition: all 0.5s ease;
+  transition: all 0.5s ease;
+  right: 0;
+}
+
+.menu__hideDropdown .fa-bars {
+  display: none;
+}
+
+.menu__hideDropdown .fa-times {
+  display: block;
+  font-size: 2.4rem;
 }
 
 .menu__bar {
@@ -472,16 +503,29 @@ main .home {
 }
 
 main .home__name {
-  font-size: 6rem;
+  font-size: clamp(3.6rem, 10vw, 6rem);
+  text-align: center;
+  line-height: 1.2;
+  padding-bottom: 1rem;
 }
 
-main .home h3 {
+main .home__work {
   font-size: 2.1rem;
   font-weight: 300;
+  padding-bottom: 0.5rem;
 }
 
 main .about {
-  display: block;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 
 main .about__title {
@@ -565,6 +609,10 @@ main .resume .skill__item--option div {
           align-items: center;
 }
 
+main .resume .skill__item--text {
+  margin: 0.5rem 0 0.2rem;
+}
+
 main .resume .skill__item--percentBorder {
   width: 100%;
   height: 6px;
@@ -574,8 +622,8 @@ main .resume .skill__item--percentBorder {
 }
 
 main .resume .skill__item--percentBar {
-  display: inline-block;
-  width: 10px;
+  display: block;
+  width: 10%;
   text-align: left;
   margin: 0.1rem;
   background-color: #F58545;
@@ -653,4 +701,106 @@ main .contact__email a {
 
 main .contact__email a:hover, main .contact__email a:focus {
   color: red;
+}
+
+@media (max-width: 1024px) {
+  .menu {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: reverse;
+        -ms-flex-direction: column-reverse;
+            flex-direction: column-reverse;
+    width: 30rem;
+    min-height: 568px;
+    height: 568px, 100vh, 768px;
+    text-align: center;
+    margin: 0;
+    z-index: 1;
+    position: fixed;
+    top: 0;
+    right: -30rem;
+    background-color: #383f46;
+  }
+  .menu__hideDropdown {
+    right: 0;
+  }
+  .menu__dropdown {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    position: fixed;
+    top: 0rem;
+    right: 0rem;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .menu__bar {
+    width: 100%;
+  }
+  .menu__bar--listOption {
+    border-bottom: none;
+  }
+  .menu__bar--listOption i {
+    display: none;
+  }
+  .menu__myInfo {
+    padding: 1rem 2rem;
+    background: none;
+  }
+  .menu__myInfo--myPic {
+    margin: 0 auto;
+  }
+  .menu__myInfo--name {
+    padding: 1rem 0 0;
+    line-height: 1.2;
+  }
+  .menu__myInfo--work {
+    padding: 0;
+  }
+  .menu__myInfo--downloadCV {
+    margin: 0.5rem 0 0;
+  }
+  main {
+    position: static;
+    width: 100%;
+  }
+}
+
+@media (max-height: 568px) {
+  .menu__bar--listOption {
+    padding: 0;
+  }
+  .menu__bar--listOption a p {
+    padding-bottom: 0.5rem;
+  }
+  .menu__myInfo--myPic {
+    width: 140px;
+    height: 140px;
+  }
+  .menu__myInfo--name {
+    font-size: 2.7rem;
+  }
+}
+
+@media (max-height: 464px) {
+  .menu {
+    -webkit-box-pack: end;
+        -ms-flex-pack: end;
+            justify-content: flex-end;
+  }
+  .menu__myInfo {
+    padding-bottom: 0;
+  }
+  .menu__myInfo--myPic {
+    display: none;
+  }
+  .menu__myInfo--name {
+    font-size: 2.7rem;
+  }
 }

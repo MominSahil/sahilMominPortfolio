@@ -39,17 +39,23 @@ main {
         justify-content: center;
         align-items: center;
         &__name {
-            font-size: 6rem;
+            font-size: clamp(3.6rem, 10vw, 6rem);
+            text-align: center;
+            line-height: 1.2;
+            padding-bottom: 1rem;
         }
-        h3 {
+        &__work {
             font-size: 2.1rem;
             font-weight: 300;
+            padding-bottom: 0.5rem;
         }
     }
 
     // start of about me section
     .about {
-        display: block;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
         &__title {
             margin-bottom: 1rem;
         }
@@ -115,6 +121,9 @@ main {
                 justify-content: space-between;
                 align-items: center;
             }
+            &__item--text {
+                margin: 0.5rem 0 0.2rem;
+            }
             &__item--percentBorder {
                 width: 100%;
                 height: 6px;
@@ -123,11 +132,12 @@ main {
                 margin-bottom: 1rem;
             }
             &__item--percentBar {
-                display: inline-block;
-                width: 10px;
+                display: block;
+                width: 10%;
                 text-align: left;
                 margin: 0.1rem;
                 background-color: $orange;
+                // margin-right: calc(100% - 50% - 0.1rem);
                 height: 2px;
             }
             .critical {

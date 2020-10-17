@@ -30,11 +30,10 @@ body {
      font-size: 1.5rem;
      line-height: 1.6;
      font-family: 'Poppins', sans-serif;
-     display: flex;
-     flex-direction: column;
      background: #222;
      color: $white;
      position: relative;
+     overflow-x: hidden;
 }
 
 .wrapper {

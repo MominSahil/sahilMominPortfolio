@@ -2,11 +2,40 @@
 .menu {
     position: fixed;
     top: 0;
-    left: 0;
+    right: calc(100vw - 40rem);
     width: 40rem;
     display: flex;
+    justify-content: flex-end;
     min-height: 100vh;
     text-align: center;
+    &__dropdown {
+        display: none;
+        cursor: pointer;
+        width: 4rem;
+        height: 4rem;
+        i {
+            font-size: 2rem;
+        }
+        &:hover,
+        &:focus,
+        &:active {
+            color: $orange;
+        }
+    }
+    .fa-times {
+        display: none;
+    }
+    &__hideDropdown {
+        transition: all 0.5s ease;
+        right: 0;
+        .fa-bars {
+            display: none;
+        }
+        .fa-times {
+            display: block;
+            font-size: 2.4rem;
+        }
+    }
     &__bar {
         width: 10rem;
         font-size: 1.2rem;

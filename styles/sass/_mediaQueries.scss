@@ -1,18 +1,28 @@
 @media (max-width: 1024px) {
-    body {
-        display: block;
-    }
     .menu {
         display: flex;
         flex-direction: column-reverse;
         width: 30rem;
-        position: relative;
+        min-height: 568px;
+        height: (568px, 100vh, 768px);
         text-align: center;
         margin: 0;
         z-index: 1;
+        position: fixed;
         top: 0;
-        right: 0rem;
+        right: -30rem;
         background-color: $darkGrey;
+        &__hideDropdown {
+            right: 0;
+        }
+        &__dropdown {
+            display: flex;
+            position: fixed;
+            top: 0rem;
+            right: 0rem;
+            justify-content: center;
+            align-items: center;
+        }
         &__bar {
             width: 100%;
         }
@@ -25,6 +35,7 @@
 
         &__myInfo {
             padding: 1rem 2rem;
+            background: none;
         }
         &__myInfo--myPic {
             margin: 0 auto;
@@ -41,7 +52,46 @@
         }
     }
     main {
+        position: static;
         width: 100%;
+    }
+}
+
+
+
+@media (max-height: 568px) {
+    .menu {
+        &__bar--listOption{
+            padding: 0;
+            a p {
+                padding-bottom: 0.5rem;
+            }
+        }
+
+        &__myInfo--myPic {
+            width: 140px;
+            height: 140px;
+        }
+        &__myInfo--name {
+            font-size: 2.7rem;
+        }
+    }
+    
+}
+
+@media (max-height: 464px) {
+    .menu {
+        justify-content: flex-end;
         
+
+        &__myInfo {
+            padding-bottom: 0;
+        }
+        &__myInfo--myPic {
+            display: none;
+        }
+        &__myInfo--name {
+            font-size: 2.7rem;
+        }
     }
 }
