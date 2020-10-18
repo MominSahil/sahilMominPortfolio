@@ -16,9 +16,9 @@ $('.menu__dropdown').on('click', function (e) {
     console.log("clicking fine");
 })
 
-// $('div:not(.menu__dropdown)').on('click', function() {
-//     $('header').removeClass('menu__hideDropdown');
-// })
+$('div:not(.menu__dropdown').on('click', function() {
+    $('header').removeClass('menu__hideDropdown');
+})
 
 myApp.init = () => {
     console.log("Hire me and I will remove this console log.");

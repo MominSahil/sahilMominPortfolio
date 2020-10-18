@@ -536,6 +536,10 @@ main .resume {
   display: block;
 }
 
+main .resume h3 {
+  font-size: clamp(1.5rem, 1.5vw, 2.1rem);
+}
+
 main .resume__heading {
   margin-bottom: 1rem;
 }
@@ -596,7 +600,7 @@ main .resume .skill {
   padding-left: 2rem;
 }
 
-main .resume .skill__item--option div {
+main .resume .skill__item--text {
   width: 100%;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -607,10 +611,11 @@ main .resume .skill__item--option div {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  margin: 0.5rem 0 0.2rem;
 }
 
-main .resume .skill__item--text {
-  margin: 0.5rem 0 0.2rem;
+main .resume .skill__item--text i {
+  font-size: 2.4rem;
 }
 
 main .resume .skill__item--percentBorder {
@@ -623,7 +628,7 @@ main .resume .skill__item--percentBorder {
 
 main .resume .skill__item--percentBar {
   display: block;
-  width: 10%;
+  width: 100%;
   text-align: left;
   margin: 0.1rem;
   background-color: #F58545;
@@ -649,9 +654,29 @@ main .portfolio__project--text {
   padding-right: 2rem;
 }
 
+main .portfolio__project--links {
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+main .portfolio__project--links a {
+  display: inline-block;
+  width: 15rem;
+  text-align: center;
+  background-color: #AAA;
+  margin-right: 1rem;
+  color: black;
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+}
+
+main .portfolio__project--links a:hover, main .portfolio__project--links a:focus {
+  background-color: #F58545;
+}
+
 main .portfolio__project--image {
   width: 25%;
-  height: 200px;
 }
 
 main .service__heading {
@@ -769,6 +794,67 @@ main .contact__email a:hover, main .contact__email a:focus {
   main {
     position: static;
     width: 100%;
+  }
+  main .resume h3 {
+    font-size: clamp(1.9rem, 2.5vw, 2.1rem);
+  }
+}
+
+@media (max-width: 768px) {
+  main .resume__timeline {
+    display: block;
+  }
+  main .resume__journey {
+    width: 100%;
+  }
+  main .resume .skill {
+    width: 100%;
+  }
+  main .resume .skill__item {
+    margin-bottom: 1rem;
+  }
+  main .resume .skill__item--list {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+  main .resume .skill__item--option {
+    width: 45%;
+  }
+  main .resume .skill__item--percentBorder {
+    min-width: 18rem;
+  }
+}
+
+@media (max-width: 464px) {
+  .menu__dropdown {
+    background-color: #AAA;
+    color: black;
+  }
+  main .resume .skill__item--list {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  main .resume .skill__item--option {
+    width: 12rem;
+    padding: 0.5rem;
+    text-align: center;
+    max-width: 36rem;
+  }
+  main .resume .skill__item--option h5 {
+    margin-bottom: 0.5rem;
+  }
+  main .resume .skill__item--text {
+    display: block;
+  }
+  main .resume .skill__item--percentBorder {
+    display: none;
   }
 }
 
