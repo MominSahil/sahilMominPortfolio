@@ -288,8 +288,8 @@ li {
 .menu {
   position: fixed;
   top: 0;
-  right: calc(100vw - 40rem);
-  width: 40rem;
+  right: calc(100vw - 41rem);
+  width: 41rem;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -336,10 +336,14 @@ li {
 }
 
 .menu__bar {
-  width: 10rem;
+  width: 11.5rem;
   font-size: 1.2rem;
   text-align: center;
-  margin-top: 1rem;
+  margin: 1rem auto 0;
+}
+
+.menu__bar--list {
+  text-align: center;
 }
 
 .menu__bar--listOption {
@@ -347,6 +351,7 @@ li {
   border-bottom: 1px solid #AAA;
   width: 100%;
   max-height: 16.5vh;
+  text-align: center;
 }
 
 .menu__bar--listOption a {
@@ -373,7 +378,7 @@ li {
 }
 
 .menu__myInfo {
-  width: 30rem;
+  width: 29.5rem;
   padding: 2rem 2rem;
   text-align: center;
   background-color: #383f46;
@@ -385,6 +390,7 @@ li {
   overflow: hidden;
   border-radius: 50%;
   margin: 2rem auto 1rem;
+  border: 3px solid #AAA;
 }
 
 .menu__myInfo--myPic img {
@@ -933,17 +939,32 @@ main .contact__email a:hover, main .contact__email a:focus {
 @media (max-width: 464px) {
   .menu {
     top: 3rem;
-    background-color: rgba(56, 63, 70, 0.85);
+    background-color: rgba(56, 63, 70, 0.95);
   }
   .menu__dropdown {
     width: 100%;
     height: 3rem;
-    background-color: rgba(56, 63, 70, 0.85);
+    background-color: rgba(56, 63, 70, 0.95);
     color: #EEE;
   }
   .menu__dropdown i {
     font-size: 2rem;
     margin-left: calc(100% - 4rem);
+  }
+  main .resume__education--heading {
+    margin: 0;
+  }
+  main .resume__education--item, main .resume__experience--item {
+    display: block;
+  }
+  main .resume__education--school, main .resume__experience--company {
+    width: 100%;
+    text-align: left;
+    padding: 1rem 0;
+  }
+  main .resume__education--degree, main .resume__experience--position {
+    width: 100%;
+    padding: 0;
   }
   main .resume .skill__item--list {
     -webkit-box-pack: center;
@@ -961,6 +982,9 @@ main .contact__email a:hover, main .contact__email a:focus {
   }
   main .resume .skill__item--text {
     display: block;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
   }
   main .resume .skill__item--percentBorder {
     display: none;

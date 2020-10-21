@@ -160,11 +160,11 @@
 @media (max-width: 464px) {
     .menu {
         top: 3rem;
-        background-color:  rgba(56, 63, 70, 0.85);
+        background-color:  rgba(56, 63, 70, 0.95);
         &__dropdown {
             width: 100%;
             height: 3rem;
-            background-color:  rgba(56, 63, 70, 0.85);
+            background-color:  rgba(56, 63, 70, 0.95);
             color: $white;
             i {
                 font-size: 2rem;
@@ -176,6 +176,25 @@
 
     main {
         .resume {
+            &__education--heading {
+                margin: 0;
+            }
+            &__education--item,
+            &__experience--item {
+                display: block;
+            }
+            &__education--school,
+            &__experience--company {
+                width: 100%;
+                text-align: left;
+                padding: 1rem 0;
+            }
+            &__education--degree,
+            &__experience--position {
+                width: 100%;
+                padding: 0;
+            }
+
             .skill {
                 &__item--list {
                     justify-content: center;
@@ -189,6 +208,7 @@
                 }
                 &__item--text {
                     display: block;
+                    align-items: flex-start;
                     // margin-bottom: 1rem;
                 }
                 &__item--percentBorder {
