@@ -9,11 +9,10 @@ $('a[href*=\\#]').on('click', function(e){
     }, 1000);
 });
 
-$('.menu__dropdown').on('click', function (e) {
+$('.menu__dropdown i').on('click', function (e) {
     e.preventDefault();
     $('.menu').css("display", "flex");
     $('header').toggleClass('menu__hideDropdown');
-    console.log("clicking fine");
 })
 
 $('div:not(.menu__dropdown').on('click', function() {
@@ -21,7 +20,7 @@ $('div:not(.menu__dropdown').on('click', function() {
 })
 
 myApp.init = () => {
-    console.log("Hire me and I will remove this console log.");
+    console.log("HIRE ME!");
 }
 
 $(document).ready(function(){

@@ -10,17 +10,22 @@
     text-align: center;
     &__dropdown {
         display: none;
-        cursor: pointer;
         width: 4rem;
         height: 4rem;
         i {
+            display: inline-block;
+            width: 4rem;
             font-size: 2.4rem;
-            padding-right: 1rem;
+            padding: 0.75rem 1rem;
+            margin-right: 2rem;
+            background-color: $orange;
+            border-radius: 50%;
+            cursor: pointer;
         }
         &:hover,
         &:focus,
         &:active {
-            color: $orange;
+            color: black;
         }
     }
     .fa-times {

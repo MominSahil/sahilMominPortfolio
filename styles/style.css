@@ -302,18 +302,23 @@ li {
 
 .menu__dropdown {
   display: none;
-  cursor: pointer;
   width: 4rem;
   height: 4rem;
 }
 
 .menu__dropdown i {
+  display: inline-block;
+  width: 4rem;
   font-size: 2.4rem;
-  padding-right: 1rem;
+  padding: 0.75rem 1rem;
+  margin-right: 2rem;
+  background-color: #F58545;
+  border-radius: 50%;
+  cursor: pointer;
 }
 
 .menu__dropdown:hover, .menu__dropdown:focus, .menu__dropdown:active {
-  color: #F58545;
+  color: black;
 }
 
 .menu .fa-times {
@@ -777,6 +782,10 @@ main .contact__email a:hover, main .contact__email a:focus {
   color: red;
 }
 
+.orange {
+  color: #F58545;
+}
+
 @media (max-width: 1024px) {
   .menu {
     display: -webkit-box;
@@ -796,6 +805,8 @@ main .contact__email a:hover, main .contact__email a:focus {
     top: 0;
     right: -30rem;
     background-color: #383f46;
+    -webkit-transition: all 0.5s ease;
+    transition: all 0.5s ease;
   }
   .menu__hideDropdown {
     right: 0;
@@ -938,18 +949,7 @@ main .contact__email a:hover, main .contact__email a:focus {
 
 @media (max-width: 464px) {
   .menu {
-    top: 3rem;
     background-color: rgba(56, 63, 70, 0.95);
-  }
-  .menu__dropdown {
-    width: 100%;
-    height: 3rem;
-    background-color: rgba(56, 63, 70, 0.95);
-    color: #EEE;
-  }
-  .menu__dropdown i {
-    font-size: 2rem;
-    margin-left: calc(100% - 4rem);
   }
   main .resume__education--heading {
     margin: 0;
@@ -965,6 +965,9 @@ main .contact__email a:hover, main .contact__email a:focus {
   main .resume__education--degree, main .resume__experience--position {
     width: 100%;
     padding: 0;
+  }
+  main .resume .skill__item--name {
+    text-align: center;
   }
   main .resume .skill__item--list {
     -webkit-box-pack: center;
@@ -1007,7 +1010,7 @@ main .contact__email a:hover, main .contact__email a:focus {
   }
 }
 
-@media (max-height: 464px) {
+@media (max-height: 494px) {
   .menu {
     -webkit-box-pack: end;
         -ms-flex-pack: end;
