@@ -1,266 +1,266 @@
 main {
-    width: calc(100% - 40rem);
-    position: absolute;
-    right: 0;
-    
-    // targeting all sections in main
-    section {
-        margin: 2rem auto;
-        min-height: 100vh;
-        border-bottom: 2px solid $grey;
-    }
-    // class used to show or hide particular section
-    // .showHide {
-    //     display: none;
-    // }
+  width: calc(100% - 42rem);
+  position: absolute;
+  right: 0;
 
-    h2 {
-        font-size: 3.2rem;
-        font-weight: 600;
+  // targeting all sections in main
+  section {
+    margin: 2rem auto;
+    min-height: calc(100vh - 4rem);
+    border-bottom: 2px solid $grey;
+  }
+
+  h2 {
+    font-size: 3.2rem;
+    font-weight: 600;
+  }
+  h3 {
+    font-size: 2.1rem;
+    font-weight: 600;
+    line-height: 1.2;
+    padding-bottom: 1rem;
+  }
+  h5 {
+    font-size: 1.5rem;
+    font-weight: 400;
+    color: $grey;
+    margin: 0;
+    line-height: 1.2;
+  }
+
+  // start of home section
+  .home {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    &__name {
+      font-size: clamp(3.6rem, 10vw, 6rem);
+      text-align: center;
+      line-height: 1.2;
+      padding-bottom: 1rem;
     }
+    &__work {
+      font-size: 2.1rem;
+      font-weight: 300;
+      padding-bottom: 0.5rem;
+    }
+  }
+
+  // start of about me section
+  .about {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    &__title {
+      margin-bottom: 1rem;
+    }
+  }
+
+  // start of resume section
+  .resume {
+    display: block;
     h3 {
+      font-size: clamp(1.5rem, 1.5vw, 2.1rem);
+    }
+    &__heading {
+      margin-bottom: 1rem;
+    }
+
+    // targeting timeline part of resume that shows education and experience on page
+    &__timeline {
+      display: flex;
+    }
+    &__journey {
+      width: 75%;
+    }
+
+    &__education {
+      margin-bottom: 3rem;
+      &--heading {
         font-size: 2.1rem;
-        font-weight: 600;
-        line-height: 1.2;
+        margin-bottom: 2rem;
+      }
+      h3:first-of-type {
+        padding-bottom: 0.5rem;
+      }
+      h5:last-of-type {
         padding-bottom: 1rem;
+      }
     }
-    h5 {
-        font-size: 1.5rem;
-        font-weight: 400;
-        color: $grey;
-        margin: 0;
-        line-height: 1.2;
+    &__education--item,
+    &__experience--item {
+      display: flex;
+      margin-bottom: 2rem;
+    }
+    &__education--school,
+    &__experience--company {
+      width: 33%;
+      text-align: right;
+      padding-right: 2rem;
+    }
+    &__education--degree,
+    &__experience--position {
+      width: 67%;
+      padding: 0 2rem 0 1rem;
     }
 
-    // start of home section
-    .home {
+    &__experience--item {
+      display: flex;
+    }
+
+    // targeting skills part of this page
+    .skill {
+      width: 25%;
+      padding-left: 2rem;
+
+      &__item--text {
+        width: 100%;
         display: flex;
-        flex-direction: column;
-        justify-content: center;
+        justify-content: space-between;
         align-items: center;
-        &__name {
-            font-size: clamp(3.6rem, 10vw, 6rem);
-            text-align: center;
-            line-height: 1.2;
-            padding-bottom: 1rem;
+        margin: 0.5rem 0 0.2rem;
+        i {
+          font-size: 2.4rem;
         }
-        &__work {
-            font-size: 2.1rem;
-            font-weight: 300;
-            padding-bottom: 0.5rem;
-        }
-    }
-
-    // start of about me section
-    .about {
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        &__title {
-            margin-bottom: 1rem;
-        }
-    }
-
-    // start of resume section
-    .resume {
+      }
+      &__item--percentBorder {
+        width: 100%;
+        height: 6px;
+        border: 1px solid $orange;
+        border-radius: 6px;
+        margin-bottom: 1rem;
+      }
+      &__item--percentBar {
         display: block;
-        h3 {
-            font-size: clamp(1.5rem, 1.5vw, 2.1rem);
-        }
-        &__heading {
-            margin-bottom: 1rem;
-        }
-
-        // targeting timeline part of resume that shows education and experience on page
-        &__timeline {
-            display: flex;
-        }
-        &__journey {
-            width: 75%;
-        }
-
-        &__education {
-            margin-bottom: 3rem;
-            &--heading {
-                font-size: 2.1rem;
-                margin-bottom: 2rem;
-            }
-            h3:first-of-type {
-                padding-bottom: 0.5rem;
-            }
-            h5:last-of-type {
-                padding-bottom: 1rem;
-            }
-        }
-        &__education--item,
-        &__experience--item {
-            display: flex;
-            margin-bottom: 2rem;
-        }
-        &__education--school,
-        &__experience--company {
-            width: 33%;
-            text-align: right;
-            padding-right: 2rem;
-        }
-        &__education--degree,
-        &__experience--position {
-            width: 67%;
-            padding: 0 2rem 0 1rem;
-        }
-
-        &__experience--item {
-            display: flex;
-        }
-        
-        // targeting skills part of this page
-        .skill {
-            // border: 2px solid red;
-            width: 25%;
-            padding-left: 2rem;
-
-            &__item--text {
-                width: 100%;
-                display: flex;
-                justify-content: space-between;
-                align-items: center;
-                margin: 0.5rem 0 0.2rem;
-                i {
-                    font-size: 2.4rem;
-                }
-            }
-            &__item--percentBorder {
-                width: 100%;
-                height: 6px;
-                border: 1px solid $orange;
-                border-radius: 6px;
-                margin-bottom: 1rem;
-            }
-            &__item--percentBar {
-                display: block;
-                width: 100%;
-                text-align: left;
-                margin: 0.1rem;
-                background-color: $orange;
-                height: 2px;
-            }
-            .critical {
-                margin: 2rem 0 0;
-            }
-        }
+        width: 100%;
+        text-align: left;
+        margin: 0.1rem;
+        background-color: $orange;
+        height: 2px;
+      }
+      .critical {
+        margin: 2rem 0 0;
+      }
     }
+  }
 
-    // start of Portfolio section
-    .portfolio {
-        &__heading {
-            margin-bottom: 1rem;
-        }
-        &__project {
-            display: flex;
-            margin-bottom: 2rem;
-            min-height: 15rem;
-            // border-bottom: 2px solid $grey;
-            
-        }
-        &__project--text {
-            width: 75%;
-            padding-right: 2rem;
-            position: relative;
-        }
-        &__project--links {
-            display: flex;
-        }
-        &__project--links a {
-            display: inline-block;
-            width: 15rem;
-            margin-bottom: 1rem;
-            text-align: center;
-            background-color: $grey;
-            margin: 1rem 1rem 1rem 0;
-            color: black;
-            transition: all 0.3s ease;
-            &:hover,
-            &:focus {
-                background-color: $orange;
-            }
-        }
-        &__project--image {
-            width: 25%;
-            height: 11rem;
-            overflow: hidden;
-            img {
-                display: block;
-                max-width: 18rem;
-                width: 100%;
-                height: 10rem;
-                border: 3px solid $grey;
-                border-radius: 10px;
-            }
-        }
+  // start of Portfolio section
+  .portfolio {
+    display: block;
+    &__heading {
+      margin-bottom: 1rem;
     }
-
-    // start of service section
-    .service {
-        &__heading {
-            margin-bottom: 1rem;
-        }
-        &__type {
-            display: flex;
-            margin-bottom: 2rem;
-            align-items: flex-start;
-            min-height: 15rem;
-        }
-        &__type--text {
-            width: 75%;
-            padding-right: 2rem;
-        }
-        &__type--image {
-            width: 25%;
-            text-align: center;
-            img {
-                display: block;
-                border: 3px solid $grey;
-                border-radius: 10px;
-                max-width: 18rem;
-                width: 100%;
-                height: 10rem;
-            }
-        }
-        &__type--link {
-            width: 100%;
-            max-width: 18rem;
-            background-color: $grey;
-            color: black;
-            line-height: 1.2;
-            padding: 0.5rem;
-            display: block;
-            margin: 1rem 0;
-            transition: all 0.3s ease;
-            &:hover,
-            &:focus {
-                background-color: $orange;
-            }
-        }
+    &__project {
+      display: flex;
+      margin-bottom: 2rem;
+      min-height: 15rem;
     }
-
-    // start of contact section
-    .contact {
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        border-bottom: none;
-        &__email a {
-            color: $orange;
-            letter-spacing: 1.2px;
-            transition: all 0.3s ease;
-            &:hover,
-            &:focus {
-                color: red;
-            }
-        }
+    &__project--text {
+      width: 75%;
+      padding-right: 2rem;
+      position: relative;
     }
-}
+    &__project--links {
+      display: flex;
+    }
+    &__project--links a {
+      display: inline-block;
+      width: 15rem;
+      margin-bottom: 1rem;
+      text-align: center;
+      background-color: $grey;
+      margin: 1rem 1rem 1rem 0;
+      color: black;
+      transition: all 0.3s ease;
+      &:hover,
+      &:focus {
+        background-color: $orange;
+      }
+    }
+    &__project--image {
+      width: 25%;
+      height: 11rem;
+      overflow: hidden;
+      img {
+        display: block;
+        max-width: 18rem;
+        width: 100%;
+        height: 10rem;
+        border: 3px solid $grey;
+        border-radius: 10px;
+      }
+    }
+  }
 
-.orange {
+  // start of service section
+  .service {
+    &__heading {
+      margin-bottom: 1rem;
+    }
+    &__type {
+      display: flex;
+      margin-bottom: 2rem;
+      align-items: flex-start;
+      min-height: 15rem;
+    }
+    &__type--text {
+      width: 75%;
+      padding-right: 2rem;
+    }
+    &__type--image {
+      width: 25%;
+      text-align: center;
+      img {
+        display: block;
+        border: 3px solid $grey;
+        border-radius: 10px;
+        max-width: 18rem;
+        width: 100%;
+        height: 10rem;
+      }
+    }
+    &__type--link {
+      width: 100%;
+      max-width: 18rem;
+      background-color: $grey;
+      color: black;
+      line-height: 1.2;
+      padding: 0.5rem;
+      display: block;
+      margin: 1rem 0;
+      transition: all 0.3s ease;
+      &:hover,
+      &:focus {
+        background-color: $orange;
+      }
+    }
+  }
+
+  // start of contact section
+  .contact {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    border-bottom: none;
+    &__email a {
+      color: $orange;
+      letter-spacing: 1.2px;
+      transition: all 0.3s ease;
+      &:hover,
+      &:focus {
+        color: red;
+      }
+    }
+  }
+
+  // show or hide particular section
+  // .showHide {
+  //   display: none;
+  // }
+
+  // used to turn font color of some text to orange
+  .orange {
     color: $orange;
+  }
 }

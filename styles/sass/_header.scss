@@ -1,156 +1,162 @@
 // Vertical navigation bar and info page
 .menu {
-    position: fixed;
-    top: 0;
-    right: calc(100vw - 41rem);
-    width: 41rem;
-    display: flex;
-    justify-content: flex-end;
-    min-height: 100vh;
+  position: fixed;
+  top: 0;
+  right: calc(100vw - 41rem);
+  width: 41rem;
+  display: flex;
+  justify-content: flex-end;
+  min-height: 100vh;
+  text-align: center;
+  &__dropdown {
+    display: none;
+    width: 4rem;
+    height: 4rem;
+    i {
+      display: inline-block;
+      width: 4rem;
+      font-size: 2.4rem;
+      padding: 0.75rem 1rem;
+      margin-right: 2rem;
+      background-color: $orange;
+      border-radius: 50%;
+      cursor: pointer;
+    }
+    &:hover,
+    &:focus,
+    &:active {
+      color: black;
+    }
+  }
+  .fa-times {
+    display: none;
+  }
+  &__hideDropdown {
+    transition: all 0.5s ease;
+    right: 0;
+    .fa-bars {
+      display: none;
+    }
+  }
+  &__bar {
+    width: 11.5rem;
+    font-size: 1.2rem;
     text-align: center;
-    &__dropdown {
-        display: none;
-        width: 4rem;
-        height: 4rem;
-        i {
-            display: inline-block;
-            width: 4rem;
-            font-size: 2.4rem;
-            padding: 0.75rem 1rem;
-            margin-right: 2rem;
-            background-color: $orange;
-            border-radius: 50%;
-            cursor: pointer;
-        }
-        &:hover,
-        &:focus,
-        &:active {
-            color: black;
-        }
-    }
-    .fa-times {
-        display: none;
-    }
-    &__hideDropdown {
-        transition: all 0.5s ease;
-        right: 0;
-        .fa-bars {
-            display: none;
-        }
-        .fa-times {
-            display: block;
-            font-size: 2.4rem;
-        }
-    }
-    &__bar {
-        width: 11.5rem;
-        font-size: 1.2rem;
-        text-align: center;
-        margin: 1rem auto 0;
-    }
-    &__bar--list {
-        // border-bottom: 1px solid $grey;
-        text-align: center;
-    }
-    &__bar--listOption {
-        padding-bottom: 0.5rem;
-        border-bottom: 1px solid $grey;
-        width: 100%;
-        max-height: 16.5vh;
-        text-align: center;
-        
-        a {
-            height: 100%;
-            transition: all 0.3s ease;
-            i {
-                width: 100%;
-                padding: 1rem;
-                font-size: 2.4rem;
-                padding-bottom: 0.5rem;
-            }
-            p {
-                width: 100%;
-                padding: 0 1rem 1rem;
-                line-height: 1.6rem;
-            }
-            &:hover,
-            &:focus,
-            &:active {
-                color: $orange;
-            }
-        }
-    }
-    
-    &__myInfo {
-        width: 29.5rem;
-        padding: 2rem 2rem;
-        text-align: center;
-        background-color: $darkGrey;
-    }
-    &__myInfo--myPic {
-        width: 180px;
-        height: 180px;
-        overflow: hidden;
-        border-radius: 50%;
-        margin: 2rem auto 1rem;
-        border: 3px solid $grey;
-        img {
-            margin: 0 auto;
-            display: block;
-            height: 100%;
-            width: 100%;
-        }
-    }
-    &__myInfo--name {
-        padding: 1.5rem 0 0;
-        font-size: 3.6rem;
-    }
-    &__myInfo--work,
-    &__myInfo--socialIcons {
-        font-size: 1.5rem;
-        font-weight: 400;
-        padding: 1rem;
-    }
-    &__myInfo--work {
-        font-size: 1.8rem;
-        color: $grey;
-    }
-    &__myInfo--social {
-        display: flex;
-        justify-content: center;
-    }
-    &__myInfo--socialIcons {
-        width: 4.5rem;
-        height: 4.5rem;
-        overflow: hidden;
-        text-align: center;
-        a {
-            font-size: 2rem;
-            width: 100%;
-            padding: 0.5rem;
-            border-radius: 5px;
-            transition: all 0.3s ease;
-            &:hover,
-            &:focus,
-            &:active {
-                color: #000;
-                background-color: $orange;
-            }
-        }
-    }
-    &__myInfo--downloadCV {
-        margin: 2rem 0;
-        padding: 1rem 2rem;
-        border: 2px solid white;
-        background-color: rgb(56, 63, 70);
-        color: $white;
-        border-radius: 100px;
-        transition: all 0.3s ease;
-        &:hover,
-        &:focus,
-        &:active {
-            background-color: $orange;
-        }
-    }
+    margin: 1rem auto 0;
+  }
+  &__bar--list {
+    text-align: center;
+  }
+  &__bar--listOption {
+    padding-bottom: 0.5rem;
+    border-bottom: 1px solid $grey;
+    width: 100%;
+    max-height: 16.5vh;
+    text-align: center;
 
+    a {
+      height: 100%;
+      transition: all 0.3s ease;
+      i {
+        width: 100%;
+        padding: 1rem;
+        font-size: 2.4rem;
+        padding-bottom: 0.5rem;
+      }
+      p {
+        width: 100%;
+        padding: 0 1rem 1rem;
+        line-height: 1.6rem;
+      }
+      &:hover,
+      &:focus,
+      &:active {
+        color: $orange;
+      }
+    }
+  }
+
+  &__myInfo {
+    width: 29.5rem;
+    padding: 2rem 2rem;
+    text-align: center;
+    background-color: $darkGrey;
+  }
+  &__myInfo--myPic {
+    width: 180px;
+    height: 180px;
+    overflow: hidden;
+    border-radius: 50%;
+    margin: 2rem auto 1rem;
+    border: 3px solid $grey;
+    img {
+      margin: 0 auto;
+      display: block;
+      height: 100%;
+      width: 100%;
+    }
+  }
+  &__myInfo--name {
+    padding: 1.5rem 0 0;
+    font-size: 3.6rem;
+  }
+  &__myInfo--work,
+  &__myInfo--socialIcons {
+    font-size: 1.5rem;
+    font-weight: 400;
+    padding: 1rem;
+  }
+  &__myInfo--work {
+    font-size: 1.8rem;
+    color: $grey;
+  }
+  &__myInfo--social {
+    display: flex;
+    justify-content: center;
+  }
+  &__myInfo--socialIcons {
+    width: 4.5rem;
+    height: 4.5rem;
+    overflow: hidden;
+    text-align: center;
+    a {
+      font-size: 2rem;
+      width: 100%;
+      padding: 0.5rem;
+      border-radius: 5px;
+      transition: all 0.3s ease;
+      &:hover,
+      &:focus,
+      &:active {
+        color: #000;
+        background-color: $orange;
+      }
+    }
+  }
+  &__myInfo--downloadCV {
+    margin: 2rem 0;
+    padding: 1rem 2rem;
+    border: 2px solid white;
+    background-color: rgb(56, 63, 70);
+    color: $white;
+    border-radius: 100px;
+    transition: all 0.3s ease;
+    &:hover,
+    &:focus,
+    &:active {
+      background-color: $orange;
+    }
+  }
+}
+
+@keyframes dropdown__animation {
+  from {
+    background-color: rgba(188, 143, 143, 1);
+    // color: rgb(188, 143, 143);
+    top: -100rem;
+  }
+  to {
+    background-color: $darkGrey;
+    top: 0;
+  }
 }
