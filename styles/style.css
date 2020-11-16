@@ -349,6 +349,7 @@ li {
   background-color: #F58545;
   border-radius: 50%;
   cursor: pointer;
+  text-align: center;
 }
 
 .menu__dropdown:hover, .menu__dropdown:focus, .menu__dropdown:active {
@@ -608,13 +609,11 @@ main .resume__heading {
 }
 
 main .resume__timeline {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
+  display: block;
 }
 
 main .resume__journey {
-  width: 75%;
+  width: 100%;
 }
 
 main .resume__education {
@@ -642,13 +641,13 @@ main .resume__education--item, main .resume__experience--item {
 }
 
 main .resume__education--school, main .resume__experience--company {
-  width: 33%;
+  width: 25%;
   text-align: right;
   padding-right: 2rem;
 }
 
 main .resume__education--degree, main .resume__experience--position {
-  width: 67%;
+  width: 75%;
   padding: 0 2rem 0 1rem;
 }
 
@@ -659,8 +658,26 @@ main .resume__experience--item {
 }
 
 main .resume .skill {
-  width: 25%;
-  padding-left: 2rem;
+  width: 100%;
+}
+
+main .resume .skill__item {
+  margin-bottom: 1rem;
+}
+
+main .resume .skill__item--list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+main .resume .skill__item--option {
+  width: 31%;
 }
 
 main .resume .skill__item--text {
@@ -748,6 +765,7 @@ main .portfolio__project--links a:hover, main .portfolio__project--links a:focus
 
 main .portfolio__project--image {
   width: 25%;
+  max-width: 16rem;
   height: 11rem;
   overflow: hidden;
 }
@@ -919,39 +937,16 @@ main .orange {
   }
 }
 
-@media (max-width: 768px) {
-  main .resume__timeline {
-    display: block;
-  }
-  main .resume__journey {
-    width: 100%;
-  }
-  main .resume .skill {
-    width: 100%;
-    padding-left: 0;
-  }
-  main .resume .skill__item {
-    margin-bottom: 1rem;
-  }
-  main .resume .skill__item--list {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -ms-flex-wrap: wrap;
-        flex-wrap: wrap;
-    -webkit-box-pack: justify;
-        -ms-flex-pack: justify;
-            justify-content: space-between;
-  }
+@media (max-width: 644px) {
   main .resume .skill__item--option {
-    width: 45%;
-  }
-  main .resume .skill__item--percentBorder {
-    min-width: 18rem;
+    width: 35%;
   }
 }
 
 @media (max-width: 568px) {
+  main .resume .skill__item--option {
+    width: 45%;
+  }
   main .portfolio__project {
     display: block;
   }

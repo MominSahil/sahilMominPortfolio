@@ -69,10 +69,10 @@ main {
 
     // targeting timeline part of resume that shows education and experience on page
     &__timeline {
-      display: flex;
+      display: block;
     }
     &__journey {
-      width: 75%;
+      width: 100%;
     }
 
     &__education {
@@ -95,13 +95,13 @@ main {
     }
     &__education--school,
     &__experience--company {
-      width: 33%;
+      width: 25%;
       text-align: right;
       padding-right: 2rem;
     }
     &__education--degree,
     &__experience--position {
-      width: 67%;
+      width: 75%;
       padding: 0 2rem 0 1rem;
     }
 
@@ -111,8 +111,19 @@ main {
 
     // targeting skills part of this page
     .skill {
-      width: 25%;
-      padding-left: 2rem;
+      width: 100%;
+
+      &__item {
+        margin-bottom: 1rem;
+      }
+      &__item--list {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+      }
+      &__item--option {
+        width: 31%;
+      }
 
       &__item--text {
         width: 100%;
@@ -180,6 +191,7 @@ main {
     }
     &__project--image {
       width: 25%;
+      max-width: 16rem;
       height: 11rem;
       overflow: hidden;
       img {

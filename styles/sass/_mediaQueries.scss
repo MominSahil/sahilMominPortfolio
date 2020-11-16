@@ -64,33 +64,12 @@
 }
 
 // start of media queries at 768px
-@media (max-width: 768px) {
+@media (max-width: 644px) {
   main {
     .resume {
-      &__timeline {
-        display: block;
-      }
-      &__journey {
-        width: 100%;
-      }
-
       .skill {
-        width: 100%;
-        padding-left: 0;
-        &__item {
-          margin-bottom: 1rem;
-        }
-        &__item--list {
-          display: flex;
-          flex-wrap: wrap;
-          justify-content: space-between;
-        }
         &__item--option {
-          width: 45%;
-        }
-
-        &__item--percentBorder {
-          min-width: 18rem;
+          width: 35%;
         }
       }
     }
@@ -99,6 +78,13 @@
 
 @media (max-width: 568px) {
   main {
+    .resume {
+      .skill {
+        &__item--option {
+          width: 45%;
+        }
+      }
+    }
     .portfolio {
       &__project {
         display: block;
