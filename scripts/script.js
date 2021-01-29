@@ -8,7 +8,7 @@ $("a[href*=\\#]").on("click", function (e) {
     {
       scrollTop: $(this.hash).offset().top,
     },
-    1000
+    1500
   );
 });
 
