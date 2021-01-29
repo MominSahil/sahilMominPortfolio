@@ -292,7 +292,7 @@ body {
   line-height: 1.6;
   font-family: "Poppins", sans-serif;
   background: #222;
-  color: #EEE;
+  color: #eee;
   position: relative;
   overflow-x: hidden;
 }
@@ -312,7 +312,7 @@ img {
 a {
   font-family: "Roboto Slab", serif;
   text-decoration: none;
-  color: #EEE;
+  color: #eee;
 }
 
 li {
@@ -343,10 +343,10 @@ li {
 .menu__dropdown i {
   display: inline-block;
   width: 4rem;
-  font-size: 2.4rem;
-  padding: 0.75rem 1rem;
-  margin-right: 2rem;
-  background-color: #F58545;
+  font-size: 2rem;
+  padding: 0.5rem 0.75rem;
+  margin-right: 1rem;
+  background-color: #f58545ba;
   border-radius: 50%;
   cursor: pointer;
   text-align: center;
@@ -383,7 +383,7 @@ li {
 
 .menu__bar--listOption {
   padding-bottom: 0.5rem;
-  border-bottom: 1px solid #AAA;
+  border-bottom: 1px solid #aaa;
   width: 100%;
   max-height: 16.5vh;
   text-align: center;
@@ -409,7 +409,7 @@ li {
 }
 
 .menu__bar--listOption a:hover, .menu__bar--listOption a:focus, .menu__bar--listOption a:active {
-  color: #F58545;
+  color: #f58545;
 }
 
 .menu__myInfo {
@@ -425,7 +425,7 @@ li {
   overflow: hidden;
   border-radius: 50%;
   margin: 2rem auto 1rem;
-  border: 3px solid #AAA;
+  border: 3px solid #aaa;
 }
 
 .menu__myInfo--myPic img {
@@ -448,7 +448,7 @@ li {
 
 .menu__myInfo--work {
   font-size: 1.8rem;
-  color: #AAA;
+  color: #aaa;
 }
 
 .menu__myInfo--social {
@@ -478,7 +478,7 @@ li {
 
 .menu__myInfo--socialIcons a:hover, .menu__myInfo--socialIcons a:focus, .menu__myInfo--socialIcons a:active {
   color: #000;
-  background-color: #F58545;
+  background-color: #f58545;
 }
 
 .menu__myInfo--downloadCV {
@@ -486,14 +486,14 @@ li {
   padding: 1rem 2rem;
   border: 2px solid white;
   background-color: #383f46;
-  color: #EEE;
+  color: #eee;
   border-radius: 100px;
   -webkit-transition: all 0.3s ease;
   transition: all 0.3s ease;
 }
 
 .menu__myInfo--downloadCV:hover, .menu__myInfo--downloadCV:focus, .menu__myInfo--downloadCV:active {
-  background-color: #F58545;
+  background-color: #f58545;
 }
 
 @-webkit-keyframes dropdown__animation {
@@ -527,7 +527,7 @@ main {
 main section {
   margin: 2rem auto;
   min-height: calc(100vh - 4rem);
-  border-bottom: 2px solid #AAA;
+  border-bottom: 2px solid #aaa;
 }
 
 main h2 {
@@ -545,7 +545,7 @@ main h3 {
 main h5 {
   font-size: 1.5rem;
   font-weight: 400;
-  color: #AAA;
+  color: #aaa;
   margin: 0;
   line-height: 1.2;
 }
@@ -571,6 +571,36 @@ main .home__name {
   text-align: center;
   line-height: 1.2;
   padding-bottom: 1rem;
+  -webkit-transform: translateX(0) translateY(0);
+          transform: translateX(0) translateY(0);
+}
+
+main .home__name:before, main .home__name:after {
+  content: "";
+  padding: 3.5rem 2.5rem;
+  position: absolute;
+  left: 50%;
+  width: 110%;
+  top: calc(50% - 10px);
+  display: block;
+  border: 5px solid #f58545;
+  -webkit-transform: translateX(-50%) translateY(-50%) rotate(0deg);
+          transform: translateX(-50%) translateY(-50%) rotate(0deg);
+  -webkit-animation: 10s infinite alternate ease-in-out tipsy;
+          animation: 10s infinite alternate ease-in-out tipsy;
+}
+
+main .home__name:before {
+  border-color: #f58545 #f58545 rgba(0, 0, 0, 0) rgba(0, 0, 0, 0);
+  z-index: -1;
+  border-radius: 1rem;
+}
+
+main .home__name:after {
+  border-color: rgba(0, 0, 0, 0) rgba(0, 0, 0, 0) #f58545 #f58545;
+  -webkit-box-shadow: 25px 25px 25px rgba(46, 46, 49, 0.8);
+          box-shadow: 25px 25px 25px rgba(46, 46, 49, 0.8);
+  border-radius: 1rem;
 }
 
 main .home__work {
@@ -701,7 +731,7 @@ main .resume .skill__item--text i {
 main .resume .skill__item--percentBorder {
   width: 100%;
   height: 6px;
-  border: 1px solid #F58545;
+  border: 1px solid #f58545;
   border-radius: 6px;
   margin-bottom: 1rem;
 }
@@ -711,7 +741,7 @@ main .resume .skill__item--percentBar {
   width: 100%;
   text-align: left;
   margin: 0.1rem;
-  background-color: #F58545;
+  background-color: #f58545;
   height: 2px;
 }
 
@@ -752,7 +782,7 @@ main .portfolio__project--links a {
   width: 15rem;
   margin-bottom: 1rem;
   text-align: center;
-  background-color: #AAA;
+  background-color: #aaa;
   margin: 1rem 1rem 1rem 0;
   color: black;
   -webkit-transition: all 0.3s ease;
@@ -760,7 +790,7 @@ main .portfolio__project--links a {
 }
 
 main .portfolio__project--links a:hover, main .portfolio__project--links a:focus {
-  background-color: #F58545;
+  background-color: #f58545;
 }
 
 main .portfolio__project--image {
@@ -774,9 +804,7 @@ main .portfolio__project--image img {
   display: block;
   max-width: 18rem;
   width: 100%;
-  height: 10rem;
-  border: 3px solid #AAA;
-  border-radius: 10px;
+  height: 100%;
 }
 
 main .service__heading {
@@ -806,7 +834,7 @@ main .service__type--image {
 
 main .service__type--image img {
   display: block;
-  border: 3px solid #AAA;
+  border: 3px solid #aaa;
   border-radius: 10px;
   max-width: 18rem;
   width: 100%;
@@ -816,7 +844,7 @@ main .service__type--image img {
 main .service__type--link {
   width: 100%;
   max-width: 18rem;
-  background-color: #AAA;
+  background-color: #aaa;
   color: black;
   line-height: 1.2;
   padding: 0.5rem;
@@ -827,7 +855,7 @@ main .service__type--link {
 }
 
 main .service__type--link:hover, main .service__type--link:focus {
-  background-color: #F58545;
+  background-color: #f58545;
 }
 
 main .contact {
@@ -845,7 +873,7 @@ main .contact {
 }
 
 main .contact__email a {
-  color: #F58545;
+  color: #f58545;
   letter-spacing: 1.2px;
   -webkit-transition: all 0.3s ease;
   transition: all 0.3s ease;
@@ -856,7 +884,34 @@ main .contact__email a:hover, main .contact__email a:focus {
 }
 
 main .orange {
-  color: #F58545;
+  color: #f58545;
+}
+
+@-webkit-keyframes tipsy {
+  0% {
+    -webkit-transform: translateX(-50%) translateY(-50%) rotate(0deg);
+            transform: translateX(-50%) translateY(-50%) rotate(0deg);
+  }
+  100% {
+    -webkit-transform: translateX(-50%) translateY(-50%) rotate(360deg);
+            transform: translateX(-50%) translateY(-50%) rotate(360deg);
+  }
+}
+
+@keyframes tipsy {
+  0% {
+    -webkit-transform: translateX(-50%) translateY(-50%) rotate(0deg);
+            transform: translateX(-50%) translateY(-50%) rotate(0deg);
+  }
+  100% {
+    -webkit-transform: translateX(-50%) translateY(-50%) rotate(360deg);
+            transform: translateX(-50%) translateY(-50%) rotate(360deg);
+  }
+}
+
+body {
+  font-family: helvetica, arial, sans-serif;
+  background-color: #2e2e31;
 }
 
 @media (max-width: 1024px) {
@@ -956,11 +1011,7 @@ main .orange {
   }
   main .portfolio__project--image {
     width: 100%;
-    padding-top: 0.5rem;
-  }
-  main .portfolio__project--image img {
-    width: 16rem;
-    height: 10rem;
+    padding-top: 1rem;
   }
   main .portfolio__project--links {
     -webkit-box-orient: vertical;

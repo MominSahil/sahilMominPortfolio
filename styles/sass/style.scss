@@ -1,12 +1,22 @@
 // declaring variables
-$white: #EEE;
-$grey: #AAA;
-$orange: #F58545;
+$white: #eee;
+$grey: #aaa;
+$orange: #f58545;
 $darkGrey: #383f46;
-$fontMain: 'Poppins', sans-serif;
-$fontHead: 'Roboto Slab', serif;
+$fontMain: "Poppins", sans-serif;
+$fontHead: "Roboto Slab", serif;
 
 @import "_setup";
 @import "_header";
 @import "_main";
 @import "_mediaQueries";
+
+////////////////////
+// .video__back {
+//   position: absolute;
+//   top: 0;
+//   width: 100vw;
+//   height: 100vh;
+//   overflow: hidden;
+//   z-index: -10;
+// }
