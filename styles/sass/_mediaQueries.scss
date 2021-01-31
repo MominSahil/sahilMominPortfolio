@@ -141,6 +141,18 @@
   }
 
   main {
+    section {
+      min-height: 100%;
+    }
+
+    .home {
+      min-height: calc(100vh - 4rem);
+    }
+
+    .about p {
+      margin-bottom: 3rem;
+    }
+
     .resume {
       &__education--heading {
         margin: 0;

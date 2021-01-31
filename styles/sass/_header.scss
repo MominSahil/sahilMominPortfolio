@@ -8,6 +8,7 @@
   justify-content: flex-end;
   min-height: 100vh;
   text-align: center;
+  overflow: hidden;
   &__dropdown {
     display: none;
     width: 4rem;

@@ -333,6 +333,7 @@ li {
           justify-content: flex-end;
   min-height: 100vh;
   text-align: center;
+  overflow: hidden;
 }
 
 .menu__dropdown {
@@ -523,6 +524,7 @@ main {
   width: calc(100% - 42rem);
   position: absolute;
   right: 0;
+  overflow: hidden;
 }
 
 main section {
@@ -1057,6 +1059,15 @@ body {
 @media (max-width: 464px) {
   .menu {
     background-color: rgba(56, 63, 70, 0.95);
+  }
+  main section {
+    min-height: 100%;
+  }
+  main .home {
+    min-height: calc(100vh - 4rem);
+  }
+  main .about p {
+    margin-bottom: 3rem;
   }
   main .resume__education--heading {
     margin: 0;
