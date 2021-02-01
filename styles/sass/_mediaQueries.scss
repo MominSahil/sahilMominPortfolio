@@ -4,7 +4,7 @@
     flex-direction: column-reverse;
     width: 30rem;
     min-height: 568px;
-    height: (568px, 100vh, 768px);
+    height: 100vh;
     text-align: center;
     margin: 0;
     z-index: 1;
@@ -147,6 +147,9 @@
 
     .home {
       min-height: calc(100vh - 4rem);
+      &__name svg {
+        width: 300px;
+      }
     }
 
     .about p {

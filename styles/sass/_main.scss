@@ -41,35 +41,137 @@ main {
       line-height: 1.2;
       padding-bottom: 1rem;
       // need for tipsy animation
-      transform: translateX(0) translateY(0);
+      // transform: translateX(0) translateY(0);
     }
+
+    &__name svg path:nth-child(1) {
+      stroke-dasharray: 219;
+      stroke-dashoffset: 219;
+      animation: line-anim 2s ease forwards;
+    }
+    &__name svg path:nth-child(2) {
+      stroke-dasharray: 225;
+      stroke-dashoffset: 225;
+      animation: line-anim 2s ease forwards;
+    }
+    &__name svg path:nth-child(3) {
+      stroke-dasharray: 212;
+      stroke-dashoffset: 212;
+      animation: line-anim 2s ease forwards 0.2s;
+    }
+    &__name svg path:nth-child(4) {
+      stroke-dasharray: 215;
+      stroke-dashoffset: 215;
+      animation: line-anim 2s ease forwards 0.4s;
+    }
+    &__name svg path:nth-child(5) {
+      stroke-dasharray: 106;
+      stroke-dashoffset: 106;
+      animation: line-anim 2s ease forwards 0.6s;
+    }
+    &__name svg path:nth-child(6) {
+      stroke-dasharray: 335;
+      stroke-dashoffset: 335;
+      animation: line-anim 2s ease forwards 0.8s;
+    }
+    &__name svg path:nth-child(7) {
+      stroke-dasharray: 340;
+      stroke-dashoffset: 340;
+      animation: line-anim 2s ease forwards 1s;
+    }
+    &__name svg path:nth-child(8) {
+      stroke-dasharray: 297;
+      stroke-dashoffset: 297;
+      animation: line-anim 2s ease forwards 1.2s;
+    }
+    &__name svg path:nth-child(9) {
+      stroke-dasharray: 300;
+      stroke-dashoffset: 300;
+      animation: line-anim 2s ease forwards 1.4s;
+    }
+    &__name svg path:nth-child(10) {
+      stroke-dasharray: 187;
+      stroke-dashoffset: 187;
+      animation: line-anim 2s ease forwards 1.6s;
+    }
+    &__name svg path:nth-child(11) {
+      stroke-dasharray: 219;
+      stroke-dashoffset: 219;
+      animation: line-anim 2s ease forwards 1.8s;
+    }
+    &__name svg path:nth-child(12) {
+      stroke-dasharray: 225;
+      stroke-dashoffset: 225;
+      animation: line-anim 2s ease forwards 2s;
+    }
+    &__name svg path:nth-child(13) {
+      stroke-dasharray: 212;
+      stroke-dashoffset: 212;
+      animation: line-anim 2s ease forwards 2.2s;
+    }
+    &__name svg path:nth-child(14) {
+      stroke-dasharray: 106;
+      stroke-dashoffset: 106;
+      animation: line-anim 2s ease forwards 2.4s;
+    }
+    &__name svg path:nth-child(15) {
+      stroke-dasharray: 106;
+      stroke-dashoffset: 106;
+      animation: line-anim 2s ease forwards 0.2s;
+    }
+    &__name svg path:nth-child(16) {
+      stroke-dasharray: 335;
+      stroke-dashoffset: 335;
+      animation: line-anim 2s ease forwards 0.2s;
+    }
+    &__name svg path:nth-child(17) {
+      stroke-dasharray: 192;
+      stroke-dashoffset: 192;
+      animation: line-anim 2s ease forwards 0.2s;
+    }
+    &__name svg path:nth-child(18) {
+      stroke-dasharray: 297;
+      stroke-dashoffset: 297;
+      animation: line-anim 2s ease forwards 0.2s;
+    }
+    &__name svg path:nth-child(19) {
+      stroke-dasharray: 106;
+      stroke-dashoffset: 106;
+      animation: line-anim 2s ease forwards 0.2s;
+    }
+    &__name svg path:nth-child(20) {
+      stroke-dasharray: 187;
+      stroke-dashoffset: 187;
+      animation: line-anim 2s ease forwards 0.2s;
+    }
+
     /////////////////////////////
     // Tipsy animation border
-    &__name:before,
-    &__name:after {
-      content: "";
-      padding: 3.5rem 2.5rem;
-      position: absolute;
-      left: 50%;
-      width: 110%;
-      top: calc(50% - 10px);
-      display: block;
-      border: 5px solid $orange;
-      transform: translateX(-50%) translateY(-50%) rotate(0deg);
-      animation: 10s infinite alternate ease-in-out tipsy;
-    }
+    // &__name:before,
+    // &__name:after {
+    //   content: "";
+    //   padding: 3.5rem 2.5rem;
+    //   position: absolute;
+    //   left: 50%;
+    //   width: 110%;
+    //   top: calc(50% - 10px);
+    //   display: block;
+    //   border: 5px solid $orange;
+    //   transform: translateX(-50%) translateY(-50%) rotate(0deg);
+    //   animation: 10s infinite alternate ease-in-out tipsy;
+    // }
 
-    &__name:before {
-      border-color: $orange $orange rgba(0, 0, 0, 0) rgba(0, 0, 0, 0);
-      z-index: -1;
-      border-radius: 1rem;
-    }
+    // &__name:before {
+    //   border-color: $orange $orange rgba(0, 0, 0, 0) rgba(0, 0, 0, 0);
+    //   z-index: -1;
+    //   border-radius: 1rem;
+    // }
 
-    &__name:after {
-      border-color: rgba(0, 0, 0, 0) rgba(0, 0, 0, 0) $orange $orange;
-      box-shadow: 25px 25px 25px rgba(46, 46, 49, 0.8);
-      border-radius: 1rem;
-    }
+    // &__name:after {
+    //   border-color: rgba(0, 0, 0, 0) rgba(0, 0, 0, 0) $orange $orange;
+    //   box-shadow: 25px 25px 25px rgba(46, 46, 49, 0.8);
+    //   border-radius: 1rem;
+    // }
     /////////////////////////////
 
     &__work {
@@ -296,11 +398,6 @@ main {
     }
   }
 
-  // show or hide particular section
-  // .showHide {
-  //   display: none;
-  // }
-
   // used to turn font color of some text to orange
   .orange {
     color: $orange;
@@ -308,12 +405,19 @@ main {
 }
 
 // tipsy border animation
-@keyframes tipsy {
-  0% {
-    transform: translateX(-50%) translateY(-50%) rotate(0deg);
-  }
-  100% {
-    transform: translateX(-50%) translateY(-50%) rotate(360deg);
+// @keyframes tipsy {
+//   0% {
+//     transform: translateX(-50%) translateY(-50%) rotate(0deg);
+//   }
+//   100% {
+//     transform: translateX(-50%) translateY(-50%) rotate(360deg);
+//   }
+// }
+
+// Name svg animation
+@keyframes line-anim {
+  to {
+    stroke-dashoffset: 0;
   }
 }
 

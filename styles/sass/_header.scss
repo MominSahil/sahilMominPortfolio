@@ -20,7 +20,7 @@
       padding: 0.5rem 0.75rem;
       margin-right: 1rem;
       background-color: #f58545ba;
-      border-radius: 50%;
+      border-radius: 5px;
       cursor: pointer;
       text-align: center;
     }
@@ -32,6 +32,10 @@
   }
   .fa-times {
     display: none;
+    color: $white;
+  }
+  .fa-times.menu__dropdown--close {
+    display: block;
   }
   &__hideDropdown {
     transition: all 0.5s ease;
