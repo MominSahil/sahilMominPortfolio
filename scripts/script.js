@@ -28,7 +28,7 @@ $("section").on("click", function () {
 
 myApp.init = () => {
   let typed = new Typed(".home__work--typed", {
-    strings: ["Front-End Developer", "Engineer", "Volunteer, Eager Beaver"],
+    strings: ["Front-End Developer", "Engineer", "Volunteer"],
     typeSpeed: 50,
     backSpeed: 50,
     loop: true,
