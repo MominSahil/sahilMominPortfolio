@@ -1,13 +1,9 @@
 const myApp = {};
 
-const svgName = $(".home__name path");
-for (let i = 0; i < svgName.length; i++) {
-  console.log(`${i + 1} = ${svgName[i].getTotalLength()}`);
-}
-
 $("a[href*=\\#]").on("click", function (e) {
   e.preventDefault();
   $("header").removeClass("menu__hideDropdown");
+  $(".fa-times").removeClass("menu__dropdown--close");
 
   $("html, body").animate(
     {

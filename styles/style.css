@@ -1039,7 +1039,7 @@ body {
     z-index: 1;
     position: fixed;
     top: 0;
-    right: -30rem;
+    right: -50rem;
     background-color: #383f46;
     -webkit-transition: all 0.5s ease;
     transition: all 0.5s ease;
@@ -1164,6 +1164,14 @@ body {
 @media (max-width: 464px) {
   .menu {
     background-color: rgba(56, 63, 70, 0.95);
+    width: 100vw;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    position: fixed;
   }
   main section {
     min-height: 100%;

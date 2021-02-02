@@ -10,7 +10,7 @@
     z-index: 1;
     position: fixed;
     top: 0;
-    right: -30rem;
+    right: -50rem;
     background-color: $darkGrey;
     transition: all 0.5s ease;
     &__hideDropdown {
@@ -138,6 +138,12 @@
 @media (max-width: 464px) {
   .menu {
     background-color: rgba(56, 63, 70, 0.95);
+    width: 100vw;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    // top: 0;
+    // right: calc(100vw - 41rem);
   }
 
   main {
