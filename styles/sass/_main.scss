@@ -40,10 +40,9 @@ main {
       text-align: center;
       line-height: 1.2;
       padding-bottom: 1rem;
-      // need for tipsy animation
-      // transform: translateX(0) translateY(0);
     }
 
+    // svg animation path
     &__name svg path:nth-child(1) {
       stroke-dasharray: 219;
       stroke-dashoffset: 219;
@@ -144,35 +143,6 @@ main {
       stroke-dashoffset: 187;
       animation: line-anim 2s ease forwards 0.2s;
     }
-
-    /////////////////////////////
-    // Tipsy animation border
-    // &__name:before,
-    // &__name:after {
-    //   content: "";
-    //   padding: 3.5rem 2.5rem;
-    //   position: absolute;
-    //   left: 50%;
-    //   width: 110%;
-    //   top: calc(50% - 10px);
-    //   display: block;
-    //   border: 5px solid $orange;
-    //   transform: translateX(-50%) translateY(-50%) rotate(0deg);
-    //   animation: 10s infinite alternate ease-in-out tipsy;
-    // }
-
-    // &__name:before {
-    //   border-color: $orange $orange rgba(0, 0, 0, 0) rgba(0, 0, 0, 0);
-    //   z-index: -1;
-    //   border-radius: 1rem;
-    // }
-
-    // &__name:after {
-    //   border-color: rgba(0, 0, 0, 0) rgba(0, 0, 0, 0) $orange $orange;
-    //   box-shadow: 25px 25px 25px rgba(46, 46, 49, 0.8);
-    //   border-radius: 1rem;
-    // }
-    /////////////////////////////
 
     &__work {
       font-size: 2.1rem;
@@ -403,16 +373,6 @@ main {
     color: $orange;
   }
 }
-
-// tipsy border animation
-// @keyframes tipsy {
-//   0% {
-//     transform: translateX(-50%) translateY(-50%) rotate(0deg);
-//   }
-//   100% {
-//     transform: translateX(-50%) translateY(-50%) rotate(360deg);
-//   }
-// }
 
 // Name svg animation
 @keyframes line-anim {
